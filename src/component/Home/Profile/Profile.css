@@ -1,0 +1,36 @@
+.profile-container {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  height: 200px;
+  color: rgb(10, 7, 7);
+  font-family: "ubuntu mono";
+  width: 100%;
+}
+.profile-left,
+.profile-right {
+  width: 100%;
+  padding-top: 60px;
+}
+.download-btn{
+  color: #ffd49c;
+  background-color: white;
+  border: 2px dotted #ffd49c;
+  padding: 8px;
+  font-size: 15px;
+  /* box-shadow:5px 6px 10px white ; */
+}
+.profile-details div {
+  padding: 10px;
+}
+.profile-details-icons a {
+  padding: 10px;
+  margin: 2px;
+  /* color: pink; */
+  color: #FFD49C;
+  font-size: 25px;
+}
+img {
+  width: 300px;
+  border-radius: 50px;
+}

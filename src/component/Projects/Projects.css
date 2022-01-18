@@ -1,0 +1,74 @@
+
+.projects-container {
+  font-family: "ubuntu mono";
+  height: 100%;
+  width: 100%;
+}
+.projects-body {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  padding: 30px;
+}
+.projects-row1 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  grid-template-columns: 5fr;
+}
+.projects-row2 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  grid-template-columns: 2fr 2fr;
+}
+.projects-row3 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  grid-template-columns: 2fr 3fr;
+}
+.projects-row4 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  grid-template-columns: 3fr 2fr;
+}
+.card {
+  width: 100%;
+  height: 100%;
+}
+.card-body {
+  margin: auto;
+  text-align: center;
+  color: grey;
+  font-size: 15px;
+}
+.card-title {
+  color: #9cc7ff;
+letter-spacing: 1px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+.card-btn {
+  color: #ffd49c;
+  font-size: 15px;
+  border: 2px dotted #ffd49c;
+  box-shadow:5px 6px 1px rgb(190, 189, 189) ;
+}
+.card-btn:hover {
+  font-weight: bold;
+  font-size: 16px;
+  color:#ffd49c !important;
+  padding: 0.340rem 0.7rem;
+}
+.card-btn:after {
+  box-shadow: none !important;
+}
+/* #projects .card-text {
+  font-family: "ubuntu mono";
+} */

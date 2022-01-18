@@ -1,0 +1,353 @@
+.resume-container {
+  background-color: white;
+  font-family: "ubuntu mono";
+  height: 85vh;
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.resume-header {
+  height: 25%;
+}
+.resume-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  height: 75%;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  /* padding :15px; */
+}
+
+.resume-side-bar {
+  background-color: white;
+  width: 60%;
+  display: flex;
+  box-shadow: 10px 7px 5px #c7c3c3;
+  position: relative;
+  height: 100%;
+  margin: 0 15px;
+}
+
+.resume-icon-bar {
+  width: 20%;
+  background-color: #9cc7ff;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.resume-icon-bar i {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume-list {
+  width: 80%;
+  padding: 30px 10px 30px 0px;
+  display: flex;
+}
+
+ul.nav.nav-pills {
+  height: 100% !important;
+  display: flex;
+}
+
+li.nav-item {
+  width: 100%;
+  height: 20% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+li > a.nav-link {
+  font-size: 20px;
+
+  font-weight: 800;
+}
+li > a.nav-link:hover {
+  text-shadow: 0px 1px 2px grey;
+  color: black !important;
+}
+
+.resume-list ul li > .active {
+  background-color: #ffd49c !important;
+  /* transition: background-color 0.2s ease-in; */
+  /* transition: all 1s ease-in; */
+  /* background-size: 200% 100%; */
+  /* background-position: left right; */
+  /* transition: all 0.5s ease-out; */
+  border-radius: 0px 30px 30px 0px !important;
+  color: black !important;
+  font-weight: bold;
+}
+.resume-list ul li > a:hover{
+  background-color: #ffd49c !important;
+  /* transition: background-color 0.2s ease-in; */
+  /* transition: all 1s ease-in; */
+  /* background-size: 200% 100%; */
+  /* background-position: left right; */
+  /* border-image: linear-gradient(to right, #ffd49c, #bebbb6); */
+  transition: all 0.5s ease-out;
+  border-radius: 0px 30px 30px 0px !important;
+  color: black !important;
+  font-weight: bold;
+
+} 
+.resume-content {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin: 0 15px;
+}
+.tab-content > .active {
+  background-color: white !important;
+}
+
+.tab-content {
+  height: 100%;
+}
+.tab-pane {
+  height: 100%;
+}
+.tab-pane > div {
+  height: 100%;
+}
+/* education-section */
+.education-section {
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.schools {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.schools > li {
+  padding: 20px;
+  height: 50%;
+}
+.school-li > p {
+  padding-top: 20px;
+  color: grey;
+}
+ul.schools {
+  list-style: none; /* Remove default bullets */
+}
+
+ul.schools li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ffd49c; /* Change the color */
+  font-weight: 900; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.year-labels {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.year-labels > div {
+  padding: 20px;
+  height: 50%;
+}
+.year-labels > div > span {
+  background: #ffd49c;
+  border-radius: 20px;
+  padding: 5px;
+  font-weight: 700;
+}
+.school-header {
+  color: #ffd49c;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* experience-section */
+.experience-section {
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.works {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.works > li {
+  padding: 20px;
+  height: 100%;
+}
+.work-header {
+  color: #ffd49c;
+  font-weight: 700;
+  font-size: 20px;
+}
+.work-li > p {
+  padding-top: 20px;
+  color: grey;
+}
+ul.works {
+  list-style: none; /* Remove default bullets */
+}
+
+ul.works li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ffd49c; /* Change the color */
+  font-weight: 900; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+/* skills section */
+
+.skills-section {
+  margin: auto;
+  /* padding: 20px; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+}
+.skills {
+  /* webkit-column-count: 2; Chrome/Opera, Safari */
+  /* -moz-column-count: 2; /* Mozilla Firefox */
+  /* column-count: 2; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.skills-header {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px 5px;
+  letter-spacing: 2px;
+}
+.skills-li {
+  /* padding: 5px; */
+  padding: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* ul.skills {
+  list-style: none; 
+}
+
+ul.skills li::before {
+  content: "\2022"; 
+  color: #ffd49c;
+  font-weight: bolder; 
+  display: inline-block;  */
+/* width: 1em;  */
+/* margin-left: -1em; 
+} */
+.progress {
+  width: 10em;
+  background-color: rgb(218, 213, 213);
+}
+.javascript {
+  width: 70px;
+  background-color: #ffd49c;
+}
+.php {
+  width: 70px;
+  background-color: #ffd49c;
+}
+.react-js {
+  width: 75px;
+  background-color: #ffd49c;
+}
+.node-js {
+  width: 68px;
+  background-color: #ffd49c;
+}
+.html {
+  width: 90px;
+  background-color: #ffd49c;
+}
+.css {
+  width: 74px;
+  background-color: #ffd49c;
+}
+.c {
+  width: 85px;
+  background-color: #ffd49c;
+}
+.cpp {
+  width: 60px;
+  background-color: #ffd49c;
+}
+.dsa {
+  width: 50px;
+  background-color: #ffd49c;
+}
+.python {
+  width: 65px;
+  background-color: #ffd49c;
+}
+.oop {
+  width: 65px;
+  background-color: #ffd49c;
+}
+.sql {
+  width: 70px;
+  background-color: #ffd49c;
+}
+.interests-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/* #interests{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+} */
+.interests-header {
+  font-weight: 800;
+  font-size: 21px;
+  color: #fad49c;
+}
+div.interests-description {
+  margin: 6px 5px;
+}
+ul.interests {
+  list-style: none; /* Remove default bullets */
+}
+
+ul.interests li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ffd49c; /* Change the color */
+  font-weight: 900; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+li.interests-li {
+  margin: 20px 5px;
+}
+.interests-description {
+  padding: 5px 0px;
+  color: grey;
+}
+/* #cpp-li{
+  display: flex;
+  flex-direction: column;
+
+} */

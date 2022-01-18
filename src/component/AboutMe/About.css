@@ -1,0 +1,10 @@
+.about-heading {
+    font-family: "ubuntu Mono";
+    position: absolute;
+    color: black !important;
+    font-size: 30px;
+    right: 0;
+    padding-right: 70px;
+    text-shadow: 5px 6px 1px rgb(190 189 189);
+}
+

@@ -1,0 +1,23 @@
+.comp-head-body{
+    width: 70%;
+    height: 100px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.comp-head-title{
+    /* -webkit-text-stroke-width: 2px; */
+    /* -webkit-text-stroke-color:black; */
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+.comp-head-description{
+    color: grey;
+}
