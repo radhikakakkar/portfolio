@@ -1,20 +1,21 @@
 import "./App.css";
-import About from "./component/AboutMe/About";
-import Contact from "./component/Contact/Contact";
-import Header from "./component/Header/Header";
-import Home from "./component/Home/Home";
-import Projects from "./component/Projects/Projects";
-import Resume from "./component/Resume/Resume";
+import {
+  BrowserRouter as Router,
+  renderMatches,
+  Route,
+  Routes,
+  Link,
+} from "react-router-dom";
+import Complete from "./component/Complete";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Home />
-      {/* <About /> */}
-      <Projects />
-      <Resume />
-      <Contact />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Complete/>}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

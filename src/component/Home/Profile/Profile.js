@@ -5,10 +5,6 @@ import "./Profile.css";
 export default function Profile() {
   return (
     <div className="profile-container">
-      <div className="profile-right">
-        {/* <img src="radhika_kakkar.jpg"></img> */}
-        <h6>You will see me soon !</h6>
-      </div>
       <div className="profile-left">
         <div className="profile-details">
           <div className="profile-details-icons">
@@ -27,11 +23,11 @@ export default function Profile() {
               <Typical
                 loop={Infinity}
                 steps={[
-                  "Hi, I am Radhika Kakkar",
+                  "It's great to have you here!",
                   2000,
-                  "Hi, I am Radhika Kakkar",
+                  "I am Radhika",
                   2000,
-                  "Hi, I am Radhika Kakkar",
+                  "Welcome to my portfolio",
                   2000,
                 ]}
               />
@@ -56,12 +52,16 @@ export default function Profile() {
                 aspiring full stack developer.
             </span>
         </div> */}
-          <div className="profile-options">
+          {/* <div className="profile-options">
             <a href="Resume.pdf" download="radhika kakkar.pdf">
               <button className="download-btn">Get Resume</button>
             </a>
-          </div>
+          </div> */}
         </div>
+      </div>
+      <div className="profile-right">
+        {/* <img id="my-photo" src="radhika_kakkar.jpg"></img> */}
+        <h6>You will see me soon !</h6>
       </div>
     </div>
   );

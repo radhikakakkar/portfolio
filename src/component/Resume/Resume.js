@@ -1,8 +1,11 @@
 import React from "react";
 import CompHead from "../comp-header/CompHead";
 import "./Resume.css";
+import { useNavigate } from "react-router-dom";
+
 
 function Resume() {
+  const navigate = useNavigate();
   const comp_name = "Resume";
   const comp_description = "My formal bio details";
   return (
@@ -71,7 +74,7 @@ function Resume() {
 
                     <li className="school-li">
                       <span className="school-header">
-                        Delhi Publick School, Vasant Kunj
+                        Delhi Public School, Vasant Kunj
                       </span>
                       <p>High School</p>
                     </li>
@@ -187,6 +190,26 @@ function Resume() {
                     </div>
                   </ul>
                 </div>
+              </div>
+            </div>
+            <div id="projects" className="tab-pane animated slideInUp">
+              <div className="projects-section">
+                <span id="projects-header">A detailed view of my projects</span>
+                <a href=""> Go to projects</a>
+                {/* <div className="projects-list">
+                  <ul className="projects">
+                    <li className="project-li">
+                      <span className=""></span>
+                      <p></p>
+                    </li>
+
+                    <li className="project-li">
+                      <span className=""></span>
+                      <p></p>
+                    </li>
+                  </ul>
+                  
+                </div> */}
               </div>
             </div>
             <div id="interests" className="tab-pane animated slideInUp">

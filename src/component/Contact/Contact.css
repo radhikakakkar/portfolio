@@ -1,5 +1,5 @@
 .contact-container {
-    font-family: "ubuntu mono";
+  font-family: "ubuntu mono";
   /* background-color: blue; */
   height: 70vh;
   width: 100%;
@@ -13,14 +13,142 @@
   margin: auto;
   display: flex;
 }
-.contact-form {
+.contact-form-div {
   width: 50%;
   padding: 20px;
   height: 70vh;
 }
-.contact-space {
-  width: 50%;
+#contact-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+}
+#contact-form > div {
+  width: 100%;
+}
+/* input styles */
+.form-label {
+  position: absolute;
+  transform: translateY(-2em) !important;
+  letter-spacing: 1.5px;
+  font-size: 1.1em;
+  padding-left: 5px;
+  transition: 0.1s ease-in;
+  /* color: rgb(250 212 156); 
+   */
+  color: black;
+}
+#contact-form > div > input {
+  width: 100%;
+  height: 42px;
+  border: 1px solid rgba(200, 200, 200, 0.3) !important;
+  outline: none;
+  background-color: rgba(200, 200, 200, 0.3);
+}
+#contact-form > div > input:focus {
+  outline: none !important;
+  border: none !important;
+  background-color: white;
+}
 
-  padding: 20px;
-  /* background: pink; */
+#contact-form > div > input:focus ~ .form-label,
+#contact-form > div > input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-4em) !important;
+  transition: 0.1s ease-out;
+  color: #9cc7ff;
+}
+#contact-form > div > input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#contact-form > div > textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid rgba(200, 200, 200, 0.3) !important;
+  outline: none;
+  background-color: rgba(200, 200, 200, 0.3);
+}
+#contact-form > div > textarea:focus {
+  outline: none !important;
+  border: none !important;
+  background-color: white;
+}
+#contact-form > div > textarea:focus ~ .form-label-t,
+#contact-form > div > textarea:not(:placeholder-shown) + .form-label-t {
+  transform: translateY(-7.5em) !important;
+  transition: 0.1s ease-out;
+  color: #9cc7ff;
+}
+#contact-form > div > textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+.form-label-t {
+  position: absolute;
+  transform: translateY(-4em) !important;
+  letter-spacing: 1.5px;
+  font-size: 1.1em;
+  padding-left: 5px;
+  /* color: rgb(250 212 156); */
+  color: black;
+  transition: 0.1s ease-in;
+}
+#div-btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+#div-btn > button.send-btn {
+  color: #ffd49c;
+  width: 50%;
+  background-color: white;
+  font-size: 15px;
+  border: 2px dotted #ffd49c;
+  box-shadow: 5px 6px 1px rgb(190, 189, 189);
+  font-weight: 700 !important;
+}
+#div-btn > button.send-btn:hover {
+  font-size: 17.5px;
+  margin: -2px 0;
+  font-weight: 700;
+  /* font-size: 16px; */
+  color: #9cc7ff;
+  border: 2px dotted #9cc7ff;
+}
+
+.contact-space-div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  /* padding: 20px; */
+}
+.contact-space-div #row1 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 2fr 2fr;
+}
+.contact-space-div #row2 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 5fr;
+}
+.contact-space-div #row3 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 3fr 2fr;
+}
+
+.contact-space-div img {
+  width: 200px;
 }

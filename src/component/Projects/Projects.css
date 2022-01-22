@@ -3,6 +3,9 @@
   font-family: "ubuntu mono";
   height: 100%;
   width: 100%;
+  /* background-color: #cde3ff; */
+  background-color: white;
+
 }
 .projects-body {
   width: 70%;

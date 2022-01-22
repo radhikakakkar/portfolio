@@ -12,7 +12,19 @@
   width: 100%;
   padding-top: 60px;
 }
-.download-btn{
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.profile-details-icons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.download-btn {
   color: #ffd49c;
   background-color: white;
   border: 2px dotted #ffd49c;
@@ -23,14 +35,55 @@
 .profile-details div {
   padding: 10px;
 }
+
 .profile-details-icons a {
   padding: 10px;
   margin: 2px;
-  /* color: pink; */
-  color: #FFD49C;
+  /* color: #ffd49c; */
+  color: white;
+  /* background-color: rgba(255, 255, 255, 0); */
+
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.4s;
+  z-index: 0;
+}
+.profile-details-icons a > i {
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  transition: all 0.4s;
+  padding: 5px;
+}
+.profile-details-icons a:hover > i {
+  border-radius: 5px;
+}
+
+.profile-details-icons > a::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(250, 212, 156, 1) 100%
+  );
+  transform: scale(0.2, 1.05);
+  transition: transform 0.4s;
+  z-index: -2;
+}
+.profile-details-icons > a:hover::before {
+  transform: scale(1, 0.2);
+}
+.profile-details-name{
   font-size: 25px;
 }
-img {
+img#my-photo {
   width: 300px;
   border-radius: 50px;
 }

@@ -1,6 +1,7 @@
 .header {
   /* background-color: #C0FFF4; */
   /* background-color: #9CC7FF; */
+
   background: rgb(156, 199, 255);
   background: linear-gradient(
     90deg,
@@ -11,12 +12,12 @@
 }
 .navbar-brand {
   font-family: "ubuntu Mono";
-  color: #9cc7ff !important;
+  color: black !important;
   padding-left: 70px;
   padding-top: 20px;
   font-weight: 700;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black; */
   /* text-shadow: 5px 6px 1px grey; */
 }
 .navbar-brand {

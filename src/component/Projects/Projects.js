@@ -7,6 +7,7 @@ function Projects() {
   const comp_name = "Projects";
   const comp_description = "A list of my Projects";
   return (
+
     <div className="projects-container">
       <div className="projects-header">
         <CompHead comp_name={comp_name} comp_description={comp_description} />
@@ -165,7 +166,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="projects-row4">
+        {/* <div className="projects-row4">
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">To-do List</h5>
@@ -197,7 +198,7 @@ function Projects() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );
