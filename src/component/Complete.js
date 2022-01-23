@@ -5,16 +5,17 @@ import Resume from "./Resume/Resume";
 import Contact from "./Contact/Contact";
 import Header from "./Header/Header";
 import About from "./AboutMe/About";
+import "./Complete.css";
 
 function Complete() {
   return (
     <div class="complete-container">
-      <Header />
+      {/* <Header /> */}
       <Home />
-      <About />
-      <Resume />
-      <Projects />
-      <Contact />
+      {/* <About /> */}
+      {/* <Resume /> */}
+      {/* <Projects /> */}
+      {/* <Contact /> */}
     </div>
   );
 }
