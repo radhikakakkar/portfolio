@@ -1,21 +1,10 @@
-import "./App.css";
-import {
-  BrowserRouter as Router,
-  renderMatches,
-  Route,
-  Routes,
-  Link,
-} from "react-router-dom";
 import Complete from "./component/Complete";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Complete/>}></Route>
-        </Routes>
-      </Router>
+      <Complete />
     </div>
   );
 }

@@ -2,14 +2,14 @@
   width: 80%;
   margin: auto;
   text-align: center;
-  height: 100%;
+  height: 85%;
   color: rgb(10, 7, 7);
   font-family: "ubuntu mono";
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 8em;
+  margin-top: 4em;
 }
 .profile-left,
 .profile-right {
@@ -67,7 +67,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 0.4s;
   transform-style: preserve-3d;
 }
 .main-nav-component:hover .component-inner {
@@ -121,6 +121,51 @@
   line-height: 40px;
   color: #000000;
 }
+#profile-greet {
+  font-family: Ubuntu Mono;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000000;
+}
+.name-div-component {
+  position: relative;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+#name-div:hover .name-div-component {
+  transform: rotateY(180deg);
+}
+.name-div-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-div-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+.name-div-front,
+.name-div-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* -webkit-backface-visibility: hidden; */
+  backface-visibility: hidden;
+}
+/* .name-div-front{
+
+}
+.name-div-back{
+
+} */
 .accent-text {
   color: #ffd49c;
 }

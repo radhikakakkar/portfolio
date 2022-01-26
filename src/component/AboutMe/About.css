@@ -1,17 +1,121 @@
 .about-container {
   font-family: "ubuntu mono";
-  /* background: #b8d7ff; */
-  background-color: white;
-
-  margin-top: -10px;
+  height: 100%;
+}
+.about-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-left: 3em;
+  margin-top: 9em;
+}
+.about-main > div {
+  margin: 0 4em;
+}
+/* .about-header > svg {
+  width: 10em;
+  height: 10em;
+  transition: linear;
+} */
+.about-header {
+  height: 100%;
+  width: 100%;
+}
+.about-header > img {
+  left: 0;
+  top: 0;
+  height: 80vh;
+  position: absolute;
+  transition: ease-in-out;
 }
 
-.about-body {
-  height: 60vh;
-  width: 60%;
-  margin: auto;
+@keyframes swinging {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes display {
+  0%{
+    display: none;
+  }
+  100%{
+    display: inline-block;
+  }
+}
+.about-header img {
+  transform-origin: 50% 0;
+  animation: swinging 1.5s ease-in-out 1;
+  animation-direction: alternate;
+  position: absolute;
+  top: -10px;
+}
+.image-txt {
+  /* background-color: white; */
   font-size: 20px;
+  position: absolute;
+  transition: ease-in-out;
+  /* transform-origin: 50% 0; */
+  animation: display;
+  /* animation-direction: alternate; */
+  position: absolute;
+  left: 8.5em;
+  height: 4em;
+  width: 6em;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  top: 48%;
+  animation-delay: 2s;
+  transition: ease-in;
+}
+.about-body {
+  margin: auto;
+  font-size: 17px;
   padding: 20px;
-  letter-spacing: 2px;
-  line-height: 35px;
+  letter-spacing: 1px;
+  line-height: 2.5em;
+  background-color: white;
+  border-radius: 20px;
+}
+#home {
+  border-radius: 20px;
+  font-size: 25px;
+  padding: 14px;
+  color: #ffd49c;
+  margin: 13px;
+  box-shadow: 6px 6px 2px grey;
+
+  bottom: -4px;
+  left: 0;
+  position: absolute;
+}
+#icons-div {
+  bottom: 5px;
+  right: 0;
+  position: absolute;
+}
+.details-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.details-icons > a {
+  color: #ffd49c;
+  margin: 13px;
+}
+.details-icons > a > i {
+  /* background-color: #c4c4c4; */
+  border-radius: 20px;
+  font-size: 25px;
+  padding: 14px;
+  box-shadow: 6px 6px 2px grey;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import CompHead from "../comp-header/CompHead";
 import "./Resume.css";
 import { useNavigate } from "react-router-dom";
-
+import SideNav from "../side-nav/SideNav";
 
 function Resume() {
   const navigate = useNavigate();
@@ -11,7 +11,8 @@ function Resume() {
   return (
     <div className="resume-container">
       <div className="resume-header">
-        <CompHead comp_name={comp_name} comp_description={comp_description} />
+        {/* <CompHead comp_name={comp_name} comp_description={comp_description} /> */}
+      
       </div>
       <div className="resume-body">
         <div className="resume-side-bar">
@@ -46,7 +47,11 @@ function Resume() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#projects" data-toggle="tab">
+                <a
+                  className="nav-link"
+                  href="#projects-resume"
+                  data-toggle="tab"
+                >
                   Projects
                 </a>
               </li>
@@ -61,7 +66,7 @@ function Resume() {
         <div className="resume-content">
           {/* <h1> hello i am content</h1> */}
           <div className="tab-content">
-            <div id="education" className="tab-pane active animated slideInUp">
+            <div id="education" className="tab-pane active animated slideInDown">
               <div className="education-section">
                 <div className="school-list">
                   <ul className="schools">
@@ -90,7 +95,7 @@ function Resume() {
                 </div>
               </div>
             </div>
-            <div id="experience" className="tab-pane animated slideInUp">
+            <div id="experience" className="tab-pane animated slideInDown">
               <div className="experience-section">
                 <div className="work-list">
                   <ul className="works">
@@ -107,7 +112,7 @@ function Resume() {
                 </div>
               </div>
             </div>
-            <div id="skills" className="tab-pane animated slideInUp">
+            <div id="skills" className="tab-pane animated slideInDown">
               <div className="skills-section">
                 <div className="skills-list">
                   <ul className="skills">
@@ -192,10 +197,10 @@ function Resume() {
                 </div>
               </div>
             </div>
-            <div id="projects" className="tab-pane animated slideInUp">
+            <div id="projects-resume" className="tab-pane animated slideInDown">
               <div className="projects-section">
                 <span id="projects-header">A detailed view of my projects</span>
-                <a href=""> Go to projects</a>
+                <a href="http://localhost:3000/projects"> Go to projects</a>
                 {/* <div className="projects-list">
                   <ul className="projects">
                     <li className="project-li">
@@ -212,7 +217,7 @@ function Resume() {
                 </div> */}
               </div>
             </div>
-            <div id="interests" className="tab-pane animated slideInUp">
+            <div id="interests" className="tab-pane animated slideInDown">
               <div className="interests-section">
                 <div className="interests-list">
                   <ul className="interests">
@@ -243,6 +248,23 @@ function Resume() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <SideNav />
+      <a href="http://localhost:3000/">
+        <i id="home" class="fas fa-home"></i>
+      </a>
+      <div id="icons-div">
+        <div className="details-icons">
+          <a href="#">
+            <i className="bi bi-twitter"></i>
+          </a>
+          <a href="#">
+            <i className="bi bi-github"></i>
+          </a>
+          <a href="#">
+            <i className="bi bi-linkedin"></i>
+          </a>
         </div>
       </div>
     </div>

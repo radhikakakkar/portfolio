@@ -2,6 +2,7 @@ import React from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import CompHead from "../comp-header/CompHead";
+import SideNav from "../side-nav/SideNav";
 // import {image1} from "../../assets/contact.jpg";
 
 function Contact() {
@@ -57,24 +58,23 @@ function Contact() {
   return (
     <div className="contact-container">
       <div className="projects-header">
-        <CompHead comp_name={comp_name} comp_description={comp_description} />
+        {/* <CompHead comp_name={comp_name} comp_description={comp_description} /> */}
       </div>
       <div className="contact-body">
         <div className="contact-space-div">
           {/* <h2>hi i am space</h2> */}
           {/* <img src={require("../../assets/contact/contact1.jpg")} /> */}
-          <div id="row1">
+          {/* <div id="row1">
             <img src={require("../../assets/contact/contact2.jpg")} />
             <img src={require("../../assets/contact/contact6.jpg")} />
           </div>
           <div id="row2">
-            {/* <img src={require("../../assets/contact/contact3.jpg")} /> */}
             <img src={require("../../assets/contact/contact7.jpg")} />
           </div>
           <div id="row3">
             <img src={require("../../assets/contact/contact4.jpg")} />
             <img src={require("../../assets/contact/contact5.jpg")} />
-          </div>
+          </div> */}
         </div>
         <div className="contact-form-div">
           <div id="notification"> </div>
@@ -128,6 +128,23 @@ function Contact() {
               </button>
             </div>
           </form>
+        </div>
+      </div>
+      <SideNav />
+      <a href="http://localhost:3000/">
+        <i id="home" class="fas fa-home"></i>
+      </a>
+      <div id="icons-div">
+        <div className="details-icons">
+          <a href="#">
+            <i className="bi bi-twitter"></i>
+          </a>
+          <a href="#">
+            <i className="bi bi-github"></i>
+          </a>
+          <a href="#">
+            <i className="bi bi-linkedin"></i>
+          </a>
         </div>
       </div>
     </div>

@@ -1,23 +1,22 @@
-
 .projects-container {
   font-family: "ubuntu mono";
   height: 100%;
   width: 100%;
-  /* background-color: #cde3ff; */
-  background-color: white;
-
 }
 .projects-body {
-  width: 70%;
-  height: 80%;
+  width: 88%;
+  height: 68%;
   margin: auto;
+  margin-top: 4%;
   padding: 30px;
+  overflow: scroll;
+  padding-left: 0;
+  margin-left: -0.2em;
 }
 .projects-row1 {
   display: grid;
   align-items: center;
   justify-content: center;
-
   grid-template-columns: 5fr;
 }
 .projects-row2 {
@@ -41,19 +40,31 @@
 
   grid-template-columns: 3fr 2fr;
 }
+.projects-row4,
+.projects-row1,
+.projects-row2,
+.projects-row3 {
+  padding: 2em;
+}
+
 .card {
-  width: 100%;
-  height: 100%;
+  width: 88%;
+  height: 95%;
+  border-radius: 3em;
+  margin: auto;
+  /* margin-bottom: 20px; */
+  box-shadow: 6px 6px 2px grey;
 }
 .card-body {
   margin: auto;
   text-align: center;
   color: grey;
   font-size: 15px;
+  margin-bottom: 2em !important;
 }
 .card-title {
   color: #9cc7ff;
-letter-spacing: 1px;
+  letter-spacing: 1px;
   font-weight: bolder;
   padding-bottom: 10px;
 }
@@ -61,13 +72,13 @@ letter-spacing: 1px;
   color: #ffd49c;
   font-size: 15px;
   border: 2px dotted #ffd49c;
-  box-shadow:5px 6px 1px rgb(190, 189, 189) ;
+  box-shadow: 5px 6px 1px rgb(190, 189, 189);
 }
 .card-btn:hover {
   font-weight: bold;
   font-size: 16px;
-  color:#ffd49c !important;
-  padding: 0.340rem 0.7rem;
+  color: #ffd49c !important;
+  padding: 0.34rem 0.7rem;
 }
 .card-btn:after {
   box-shadow: none !important;
@@ -75,3 +86,37 @@ letter-spacing: 1px;
 /* #projects .card-text {
   font-family: "ubuntu mono";
 } */
+#home {
+  border-radius: 20px;
+  font-size: 25px;
+  padding: 14px;
+  color: black;
+  margin: 13px;
+  box-shadow: 6px 6px 2px grey;
+
+  bottom: -4px;
+  left: 0;
+  position: absolute;
+}
+#icons-div {
+  bottom: 5px;
+  right: 0;
+  position: absolute;
+}
+.details-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.details-icons > a {
+  color: black;
+  margin: 13px;
+}
+.details-icons > a > i {
+  /* background-color: #c4c4c4; */
+  border-radius: 20px;
+  font-size: 25px;
+  padding: 14px;
+  box-shadow: 6px 6px 2px grey;
+}

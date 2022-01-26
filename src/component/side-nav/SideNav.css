@@ -1,0 +1,45 @@
+.side-nav-container {
+  position: absolute;
+  width: 8%;
+  right: 0;
+  top: 14%;
+  height: 60%;
+  background: #c4c4c4;
+}
+.side-nav-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.side-nav-body > div {
+  margin: 10px 0;
+}
+.side-nav-component {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 6px 6px 2px grey;
+}
+.side-nav-component > i {
+  font-size: 2em;
+}
+.side-nav-component:hover {
+  height: 63px;
+  width: 63px;
+}
+.side-nav-component:hover {
+  margin: 8.5px 0;
+  /* box-shadow: none; */
+}
+.active-nav {
+  /* outline: 3px solid orange; */
+  background-color: orange;
+}

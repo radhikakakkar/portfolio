@@ -2,15 +2,23 @@ import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
 // import Resume from ''
-import userVid from "../../../assets/Home/user.mp4";
+// import userVid from "../../../assets/Home/user.mp4";
+import Footer from "../Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 export default function Profile() {
+  const navigate = useNavigate();
+
   return (
     <div className="profile-container">
       <div className="profile-left">
         <div className="main-nav">
           <div className="grid-row">
-            <div className="main-nav-component" id="about-me">
+            <div
+              className="main-nav-component"
+              onClick={() => navigate("/about-me")}
+              id="about-me"
+            >
               <div className="component-inner">
                 <div className="flip-front">
                   <i class="fas fa-user-tie accent-text"></i>
@@ -20,7 +28,11 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            <div class="main-nav-component" id="resume">
+            <div
+              class="main-nav-component"
+              onClick={() => navigate("/resume")}
+              id="resume"
+            >
               <div className="component-inner">
                 <div className="flip-front">
                   <i class="fas fa-file accent-text"></i>
@@ -32,7 +44,11 @@ export default function Profile() {
             </div>
           </div>
           <div class="grid-row">
-            <div class="main-nav-component" id="projects">
+            <div
+              class="main-nav-component"
+              onClick={() => navigate("/projects")}
+              id="projects"
+            >
               <div className="component-inner">
                 <div className="flip-front">
                   <i class="fas fa-project-diagram accent-text"></i>
@@ -42,7 +58,11 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            <div class="main-nav-component" id="contact-me">
+            <div
+              class="main-nav-component"
+              onClick={() => navigate("/contact-me")}
+              id="contact-me"
+            >
               <div className="component-inner">
                 <div className="flip-front">
                   <i class="fas fa-inbox accent-text"></i>
@@ -58,10 +78,21 @@ export default function Profile() {
 
       <div className="profile-right">
         <div className="intro-div">
+
           <div id="name-div">
-            <span id="profile-name">
-              HEY, I AM <span className="accent-text">RADHIKA KAKKAR</span>
-            </span>
+            <div className="name-div-component">
+
+            <div className="name-div-front">
+              <span id="profile-name">
+                HEY, I AM <span className="accent-text">RADHIKA KAKKAR</span>
+              </span>
+            </div>
+            <div className="name-div-back">
+              <span id="profile-greet">It's great to have you here !</span>
+            </div>
+
+            </div>
+          
           </div>
           {/* <div id="greetings-div">
             <Typical
@@ -101,6 +132,8 @@ export default function Profile() {
         </div>
       </div>
     </div>
+
+    // <Footer />
   );
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import CompHead from "../comp-header/CompHead";
+import SideNav from "../side-nav/SideNav";
 
 import "./Projects.css";
 
@@ -7,13 +8,12 @@ function Projects() {
   const comp_name = "Projects";
   const comp_description = "A list of my Projects";
   return (
-
     <div className="projects-container">
       <div className="projects-header">
-        <CompHead comp_name={comp_name} comp_description={comp_description} />
+        {/* <CompHead comp_name={comp_name} comp_description={comp_description} /> */}
       </div>
       <section className="projects-body">
-      <div className="projects-row4">
+        <div className="projects-row4">
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Portfolio website</h5>
@@ -25,7 +25,6 @@ function Projects() {
                 // href="#"
                 // onclick="return false;"
                 className="btn card-btn"
-                
               >
                 You are currently here!
               </a>
@@ -35,15 +34,14 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title">On the Go</h5>
               <p className="card-text">
-                A mobile first application created for a hackathon,
-                Frontend in ReactJs as my contribution to the team.
+                A mobile first application created for a hackathon, Frontend in
+                ReactJs as my contribution to the team.
               </p>
               <a
                 // target="_blank"
                 // href="#"
                 // onclick="return false;"
                 className="btn card-btn"
-                
               >
                 yet to be deployed
               </a>
@@ -200,6 +198,23 @@ function Projects() {
           </div>
         </div> */}
       </section>
+      <SideNav />
+      <a href="http://localhost:3000/">
+        <i id="home" class="fas fa-home"></i>
+      </a>
+      <div id="icons-div">
+        <div className="details-icons">
+          <a href="#">
+            <i className="bi bi-twitter"></i>
+          </a>
+          <a href="#">
+            <i className="bi bi-github"></i>
+          </a>
+          <a href="#">
+            <i className="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
