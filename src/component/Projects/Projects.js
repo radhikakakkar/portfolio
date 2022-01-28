@@ -1,12 +1,16 @@
 import React from "react";
 import CompHead from "../comp-header/CompHead";
 import SideNav from "../side-nav/SideNav";
+import { useNavigate } from "react-router-dom";
+
 
 import "./Projects.css";
 
 function Projects() {
-  const comp_name = "Projects";
-  const comp_description = "A list of my Projects";
+  const navigate = useNavigate();
+
+  // const comp_name = "Projects";
+  // const comp_description = "A list of my Projects";
   return (
     <div className="projects-container">
       <div className="projects-header">
@@ -34,8 +38,7 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title">On the Go</h5>
               <p className="card-text">
-                A mobile first application created for a hackathon, Frontend in
-                ReactJs as my contribution to the team.
+                A mobile first application created for a hackathon, created using MERN stack.
               </p>
               <a
                 // target="_blank"
@@ -197,22 +200,35 @@ function Projects() {
             </div>
           </div>
         </div> */}
+        <div className="loading-projects">
+          <span>Loading 10 more in 5 days ...</span>
+          <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated"
+            role="progressbar"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+
+          >
+          </div>
+        </div>
       </section>
+
       <SideNav />
-      <a href="http://localhost:3000/">
-        <i id="home" class="fas fa-home"></i>
+      <a onClick={() => navigate("/")}>
+        <i id="home" class="fas fa-home">
+        </i>
       </a>
       <div id="icons-div">
         <div className="details-icons">
-          <a href="#">
-            <i className="bi bi-twitter"></i>
-          </a>
-          <a href="#">
-            <i className="bi bi-github"></i>
-          </a>
-          <a href="#">
-            <i className="bi bi-linkedin"></i>
-          </a>
+          <a href="https://twitter.com/radhikakkar">
+            <i id="footer-icon" className="bi bi-twitter"> </i>{" "}
+          </a>{" "}
+          <a href="github.com/radhikakakkar">
+            <i id="footer-icon" className="bi bi-github"> </i>{" "}
+          </a>{" "}
+          <a href="in.com/in/radhika-kakkar-bb6824193/">
+            <i id="footer-icon" className="bi bi-linkedin"> </i>{" "}
+          </a>{" "}
         </div>
       </div>
     </div>

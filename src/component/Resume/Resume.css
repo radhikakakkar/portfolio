@@ -370,37 +370,3 @@ li.interests-li {
   flex-direction: column;
 
 } */
-#home {
-  border-radius: 20px;
-  font-size: 25px;
-  padding: 14px;
-  color: black;
-  margin: 13px;
-  box-shadow: 6px 6px 2px grey;
-
-  bottom: -4px;
-  left: 0;
-  position: absolute;
-}
-#icons-div {
-  bottom: 5px;
-  right: 0;
-  position: absolute;
-}
-.details-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.details-icons > a {
-  color: black;
-  margin: 13px;
-}
-.details-icons > a > i {
-  /* background-color: #c4c4c4; */
-  border-radius: 20px;
-  font-size: 25px;
-  padding: 14px;
-  box-shadow: 6px 6px 2px grey;
-}

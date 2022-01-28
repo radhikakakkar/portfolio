@@ -3,6 +3,8 @@ import emailjs from "emailjs-com";
 import "./Contact.css";
 import CompHead from "../comp-header/CompHead";
 import SideNav from "../side-nav/SideNav";
+import { useNavigate } from "react-router-dom";
+
 // import {image1} from "../../assets/contact.jpg";
 
 function Contact() {
@@ -24,8 +26,10 @@ function Contact() {
   //     .catch((err) => console.log(err));
   // }
 
-  const comp_name = "Contact Me";
-  const comp_description = "Let's keep in touch";
+  // const comp_name = "Contact Me";
+  // const comp_description = "Let's keep in touch";
+  const navigate = useNavigate();
+
 
   function validate(e) {
     //   console.log("i am validate");
@@ -131,20 +135,21 @@ function Contact() {
         </div>
       </div>
       <SideNav />
-      <a href="http://localhost:3000/">
-        <i id="home" class="fas fa-home"></i>
+      <a onClick={() => navigate("/")}>
+        <i id="home" class="fas fa-home">
+        </i>
       </a>
       <div id="icons-div">
         <div className="details-icons">
-          <a href="#">
-            <i className="bi bi-twitter"></i>
-          </a>
-          <a href="#">
-            <i className="bi bi-github"></i>
-          </a>
-          <a href="#">
-            <i className="bi bi-linkedin"></i>
-          </a>
+          <a href="https://twitter.com/radhikakkar">
+            <i id="footer-icon" className="bi bi-twitter"> </i>{" "}
+          </a>{" "}
+          <a href="github.com/radhikakakkar">
+            <i id="footer-icon" className="bi bi-github"> </i>{" "}
+          </a>{" "}
+          <a href="in.com/in/radhika-kakkar-bb6824193/">
+            <i id="footer-icon" className="bi bi-linkedin"> </i>{" "}
+          </a>{" "}
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import "./Resume.css";
 import { useNavigate } from "react-router-dom";
 import SideNav from "../side-nav/SideNav";
 
+
 function Resume() {
   const navigate = useNavigate();
   const comp_name = "Resume";
@@ -251,20 +252,21 @@ function Resume() {
         </div>
       </div>
       <SideNav />
-      <a href="http://localhost:3000/">
-        <i id="home" class="fas fa-home"></i>
+      <a onClick={() => navigate("/")}>
+        <i id="home" class="fas fa-home">
+        </i>
       </a>
       <div id="icons-div">
         <div className="details-icons">
-          <a href="#">
-            <i className="bi bi-twitter"></i>
-          </a>
-          <a href="#">
-            <i className="bi bi-github"></i>
-          </a>
-          <a href="#">
-            <i className="bi bi-linkedin"></i>
-          </a>
+        <a href="https://twitter.com/radhikakkar">
+            <i id="footer-icon" className="bi bi-twitter"> </i>{" "}
+          </a>{" "}
+          <a href="github.com/radhikakakkar">
+            <i id="footer-icon" className="bi bi-github"> </i>{" "}
+          </a>{" "}
+          <a href="in.com/in/radhika-kakkar-bb6824193/">
+            <i id="footer-icon" className="bi bi-linkedin"> </i>{" "}
+          </a>{" "}
         </div>
       </div>
     </div>

@@ -88,7 +88,7 @@ export default function Profile() {
               </span>
             </div>
             <div className="name-div-back">
-              <span id="profile-greet">It's great to have you here !</span>
+              <span id="profile-greet">IT'S GREAT TO HAVE YOU HERE!</span>
             </div>
 
             </div>
