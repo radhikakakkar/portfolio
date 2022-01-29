@@ -14,20 +14,20 @@ function About() {
   return (
     <div className="about-container">
       <div className="about-main">
-        <div className="about-header">
-          <img src={require("../../assets/Home/hanging.png")} />{" "}
-          <div className="image-txt">
-            <p> About Me </p>{" "}
-          </div>
+        {/* <div className="about-header">
+        <div className="image-txt"> */}
+        {/* <p> About Me </p> */}
+        {/* </div> */}
+        {/* <img src={require("../../assets/Home/hanging.png")} />{" "} */}
+          
           {/* <CompHead comp_name={comp_name} comp_description={comp_description} /> */}{" "}
           {/* <img src={require("../../assets/Home/hanging-board.jpeg")} />  */}{" "}
           
-        </div>
+        {/* </div> */}
         <div className="about-body">
             <div className="about-text">
              <p>
-            I am an undergrad Information Technology student from Manipal
-            University Jaipur who is intrigued by development on the web with a
+            I am an undergrad Information Technology student who is intrigued by development on the web with a
             knack for Frontend.I am currently working on my UI / UX skills and
             absorbing newer design tools. Creating & learning by the day, I
             aspire to become an excellent full stack developer among alot of

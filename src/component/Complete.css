@@ -1,15 +1,17 @@
 .complete-container {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
 }
+
 .complete-contents {
   width: 100%;
-    /* display: flex; */
-    /* flex-direction: row; */
-    height: 100%;
-    top: 0;
-    position: absolute;
-    overflow: hidden;
-    /* justify-content: flex-start;*/
+  /* display: flex; */
+  /* flex-direction: row; */
+  height: 100%;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+  /* justify-content: flex-start;*/
 }

@@ -65,21 +65,6 @@ function Contact() {
         {/* <CompHead comp_name={comp_name} comp_description={comp_description} /> */}
       </div>
       <div className="contact-body">
-        <div className="contact-space-div">
-          {/* <h2>hi i am space</h2> */}
-          {/* <img src={require("../../assets/contact/contact1.jpg")} /> */}
-          {/* <div id="row1">
-            <img src={require("../../assets/contact/contact2.jpg")} />
-            <img src={require("../../assets/contact/contact6.jpg")} />
-          </div>
-          <div id="row2">
-            <img src={require("../../assets/contact/contact7.jpg")} />
-          </div>
-          <div id="row3">
-            <img src={require("../../assets/contact/contact4.jpg")} />
-            <img src={require("../../assets/contact/contact5.jpg")} />
-          </div> */}
-        </div>
         <div className="contact-form-div">
           <div id="notification"> </div>
           <form id="contact-form">
@@ -133,6 +118,40 @@ function Contact() {
             </div>
           </form>
         </div>
+        <div className="contact-space-div">
+
+          <div className="space-div-top">
+            <div className="connect-header">
+              <p>Let's</p>
+              <p>Connect</p>
+            </div>
+          </div>
+          <div className="space-div-bottom">
+            <div className="space-div-icons" id="email-id">
+              <i class="fas fa-envelope-open-text"></i>
+              <span>radhika3273@gmail.com</span>
+            </div>
+            <div className="space-div-icons" id="location">
+              <i class="fas fa-map-pin"></i>
+              <span>Delhi/Jaipur</span>
+            </div>
+          </div>
+
+          {/* <h2>hi i am space</h2> */}
+          {/* <img src={require("../../assets/contact/contact1.jpg")} /> */}
+          {/* <div id="row1">
+            <img src={require("../../assets/contact/contact2.jpg")} />
+            <img src={require("../../assets/contact/contact6.jpg")} />
+          </div>
+          <div id="row2">
+            <img src={require("../../assets/contact/contact7.jpg")} />
+          </div>
+          <div id="row3">
+            <img src={require("../../assets/contact/contact4.jpg")} />
+            <img src={require("../../assets/contact/contact5.jpg")} />
+          </div> */}
+        </div>
+
       </div>
       <SideNav />
       <a onClick={() => navigate("/")}>

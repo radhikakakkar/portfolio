@@ -82,17 +82,17 @@ export default function Profile() {
           <div id="name-div">
             <div className="name-div-component">
 
-            <div className="name-div-front">
-              <span id="profile-name">
-                HEY, I AM <span className="accent-text">RADHIKA KAKKAR</span>
-              </span>
-            </div>
-            <div className="name-div-back">
-              <span id="profile-greet">IT'S GREAT TO HAVE YOU HERE!</span>
-            </div>
+              <div className="name-div-front">
+                <span id="profile-name">
+                  HEY, I AM <span className="accent-text">RADHIKA KAKKAR</span>
+                </span>
+              </div>
+              <div className="name-div-back">
+                <span id="profile-greet">IT'S GREAT TO HAVE YOU HERE!</span>
+              </div>
 
             </div>
-          
+
           </div>
           {/* <div id="greetings-div">
             <Typical
@@ -113,13 +113,13 @@ export default function Profile() {
           </div> */}
           <div id="profile-icons-div">
             <div className="profile-details-icons">
-              <a href="#">
+              <a target="_blank" href="https://twitter.com/radhikakkar">
                 <i className="bi bi-twitter"></i>
               </a>
-              <a href="#">
+              <a target="_blank" href="github.com/radhikakakkar">
                 <i className="bi bi-github"></i>
               </a>
-              <a href="#">
+              <a target="_blank" href="in.com/in/radhika-kakkar-bb6824193/">
                 <i className="bi bi-linkedin"></i>
               </a>
             </div>

@@ -1,5 +1,7 @@
 body{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    overflow: hidden;
+    height: 100%;
+    position: fixed;
+    /* overflow: hidden; */
 }
