@@ -13,7 +13,7 @@ function Resume() {
     <div className="resume-container">
       <div className="resume-header">
         {/* <CompHead comp_name={comp_name} comp_description={comp_description} /> */}
-      
+
       </div>
       <div className="resume-body">
         <div className="resume-side-bar">
@@ -201,7 +201,7 @@ function Resume() {
             <div id="projects-resume" className="tab-pane animated slideInDown">
               <div className="projects-section">
                 <span id="projects-header">A detailed view of my projects</span>
-                <a href="http://localhost:3000/projects"> Go to projects</a>
+                <a onClick={() => navigate("/projects")}> Go to projects</a>
                 {/* <div className="projects-list">
                   <ul className="projects">
                     <li className="project-li">
@@ -225,7 +225,7 @@ function Resume() {
                     <li className="interests-li">
                       <span className="interests-header">Music</span>
                       <div className="interests-description">
-                        I am a Indian classical singer with a bachelors' degree
+                        I am an Indian classical singer with bachelors' degree
                         and currently procastinating learning guitar.
                       </div>
                     </li>
@@ -238,7 +238,7 @@ function Resume() {
                       </div>
                     </li>
                     <li className="interests-li">
-                      <span className="interests-header">Deisigning</span>
+                      <span className="interests-header">Designing</span>
                       <div className="interests-description">
                         Not a professional but I love mixing colours for club
                         posters and my UIs ;)
@@ -258,7 +258,7 @@ function Resume() {
       </a>
       <div id="icons-div">
         <div className="details-icons">
-        <a href="https://twitter.com/radhikakkar">
+          <a href="https://twitter.com/radhikakkar">
             <i id="footer-icon" className="bi bi-twitter"> </i>{" "}
           </a>{" "}
           <a href="github.com/radhikakakkar">
