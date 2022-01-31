@@ -11,6 +11,7 @@ export default function Profile() {
 
   return (
     <div className="profile-container">
+
       <div className="profile-left">
         <div className="main-nav">
           <div className="grid-row">
@@ -76,6 +77,7 @@ export default function Profile() {
         </div>
       </div>
 
+
       <div className="profile-right">
         <div className="intro-div">
 
@@ -131,7 +133,7 @@ export default function Profile() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
 
     // <Footer />
   );

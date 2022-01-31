@@ -11,6 +11,7 @@
   align-items: center;
   margin-top: 4em;
 }
+
 .profile-left,
 .profile-right {
   width: 100%;
@@ -19,6 +20,7 @@
   /* margin-left: 60px;
   margin-top: 60px; */
 }
+
 .main-nav {
   /* border: white 2px solid;
   border-radius: 30px; */
@@ -27,6 +29,7 @@
   display: grid;
   /* grid-template-column: */
 }
+
 .grid-row {
   display: flex;
   flex-direction: row;
@@ -43,12 +46,14 @@
   justify-content: center;
   align-items: center;
 }
-.intro-div > div {
+
+.intro-div>div {
   /* border: white 4px solid; */
   margin: 1em;
   /* height: 5em; */
   width: 80%;
 }
+
 .main-nav-component {
   width: 11em;
   height: 11em;
@@ -69,9 +74,11 @@
   transition: transform 0.4s;
   transform-style: preserve-3d;
 }
+
 .main-nav-component:hover .component-inner {
   transform: rotateY(180deg);
 }
+
 .flip-front {
   font-size: 70px;
   display: flex;
@@ -92,6 +99,7 @@
   color: white;
   transform: rotateY(180deg);
 }
+
 .flip-front,
 .flip-back {
   position: absolute;
@@ -100,6 +108,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 /* #user-vid{
   width: 100px;
   height: 100px;
@@ -113,6 +122,7 @@
   align-items: center;
   justify-content: center;
 }
+
 #profile-name {
   font-family: Ubuntu Mono;
   font-size: 35px;
@@ -120,6 +130,7 @@
   line-height: 40px;
   color: #000000;
 }
+
 #profile-greet {
   font-family: Ubuntu Mono;
   font-size: 30px;
@@ -127,6 +138,7 @@
   line-height: 30px;
   color: #000000;
 }
+
 .name-div-component {
   position: relative;
   border-radius: 30px;
@@ -136,9 +148,11 @@
   transition: transform 0.4s;
   transform-style: preserve-3d;
 }
+
 #name-div:hover .name-div-component {
   transform: rotateY(180deg);
 }
+
 .name-div-front {
   display: flex;
   justify-content: center;
@@ -151,6 +165,7 @@
   align-items: center;
   transform: rotateY(180deg);
 }
+
 .name-div-front,
 .name-div-back {
   position: absolute;
@@ -159,6 +174,7 @@
   /* -webkit-backface-visibility: hidden; */
   backface-visibility: hidden;
 }
+
 /* .name-div-front{
 
 }
@@ -168,6 +184,7 @@
 .accent-text {
   color: #ffd49c;
 }
+
 #greetings-div {
   border: white 2px solid;
   border-radius: 30px;
@@ -177,6 +194,7 @@
   font-size: 20px;
   color: white;
 }
+
 .download-btn {
   color: black;
   height: 100%;
@@ -189,6 +207,7 @@
   font-size: 20px;
   cursor: pointer;
 }
+
 .profile-details-icons {
   position: relative;
   display: flex;
@@ -196,14 +215,17 @@
   justify-content: center;
   align-items: center;
 }
+
 #profile-icons-div {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-#profile-icons-div > div {
+
+#profile-icons-div>div {
   /* border: 4px solid white; */
 }
+
 .profile-details-icons a {
   padding: 10px;
   margin: 2px;
@@ -219,32 +241,74 @@
   transition: 0.4s;
   z-index: 0;
 }
-.profile-details-icons a > i {
+
+.profile-details-icons a>i {
   background-color: transparent;
   backdrop-filter: blur(50px);
   transition: all 0.4s;
   padding: 5px;
 }
-.profile-details-icons a:hover > i {
+
+.profile-details-icons a:hover>i {
   border-radius: 5px;
 }
 
-.profile-details-icons > a::before {
+.profile-details-icons>a::before {
   content: " ";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(250, 212, 156, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(250, 212, 156, 1) 100%);
   transform: scale(0.2, 1.05);
   transition: transform 0.4s;
   z-index: -2;
 }
-.profile-details-icons > a:hover::before {
+
+.profile-details-icons>a:hover::before {
   transform: scale(1, 0.2);
+}
+
+/* @media(max-width: 500px) {
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+  }
+} */
+@media(max-width:1050px) {
+  .main-nav-component {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media(max-width:940px) {
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.3em;
+  }
+
+  .main-nav-component {
+    width: 9em;
+    height: 9em;
+  }
+
+  .main-nav>.grid-row {
+    margin: 10px;
+  }
+
+  #profile-name,
+  #profile-greet {
+    font-size: 27px;
+    font-weight: 700;
+    /* line-height: 10px; */
+
+  }
+  #name-div{
+    width: 100%;
+  }
 }
