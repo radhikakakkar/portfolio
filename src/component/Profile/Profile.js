@@ -77,7 +77,6 @@ export default function Profile() {
         </div>
       </div>
 
-
       <div className="profile-right">
         <div className="intro-div">
 
