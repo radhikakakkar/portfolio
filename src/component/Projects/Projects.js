@@ -38,12 +38,12 @@ function Projects() {
                 A mobile first application created for a hackathon, created using MERN stack.
               </p>
               <a
-                // target="_blank"
-                // href="#"
-                // onclick="return false;"
+                target="_blank"
+                href="https://onthego-dotslash.herokuapp.com/"
+
                 className="btn card-btn"
               >
-                yet to be deployed
+                Have a look
               </a>
             </div>
           </div>
