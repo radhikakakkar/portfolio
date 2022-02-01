@@ -304,6 +304,13 @@
 
   .flip-back {
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd49c;
+    border-radius: 20px;
+    color: white;
+    transform: rotateY(180deg);
   }
 
   #profile-name,
