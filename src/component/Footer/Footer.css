@@ -5,6 +5,7 @@
   height: 20%;
   position: absolute;
   top: 79vh;
+  bottom: 0;
 }
 
 /* @media(max-width:940px) {
@@ -39,7 +40,18 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
-  .footer-container {}
+  .footer-container {
+
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    /* z-index: 99; */
+    position: fixed;
+
+  }
 }
 
 /* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
