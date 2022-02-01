@@ -9,13 +9,10 @@ import "./Projects.css";
 function Projects() {
   const navigate = useNavigate();
 
-  // const comp_name = "Projects";
-  // const comp_description = "A list of my Projects";
+
   return (
     <div className="projects-container">
-      <div className="projects-header">
-        {/* <CompHead comp_name={comp_name} comp_description={comp_description} /> */}
-      </div>
+
       <section className="projects-body">
         <div className="projects-row4" id="project-rows">
           <div className="card">
@@ -220,13 +217,13 @@ function Projects() {
       </a>
       <div id="icons-div">
         <div className="details-icons">
-          <a href="https://twitter.com/radhikakkar">
+          <a target="_blank" href="https://twitter.com/radhikakkar">
             <i id="footer-icon" className="bi bi-twitter"> </i>{" "}
           </a>{" "}
-          <a href="github.com/radhikakakkar">
+          <a target="_blank" href="https://github.com/radhikakakkar">
             <i id="footer-icon" className="bi bi-github"> </i>{" "}
           </a>{" "}
-          <a href="in.com/in/radhika-kakkar-bb6824193/">
+          <a target="_blank" href="https://www.linkedin.com/in/radhika-kakkar-bb6824193">
             <i id="footer-icon" className="bi bi-linkedin"> </i>{" "}
           </a>{" "}
         </div>

@@ -61,9 +61,6 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <div className="projects-header">
-        {/* <CompHead comp_name={comp_name} comp_description={comp_description} /> */}
-      </div>
       <div className="contact-body">
         <div className="contact-form-div">
           <div id="notification"> </div>
@@ -160,13 +157,13 @@ function Contact() {
       </a>
       <div id="icons-div">
         <div className="details-icons">
-          <a href="https://twitter.com/radhikakkar">
+          <a target="_blank" href="https://twitter.com/radhikakkar">
             <i id="footer-icon" className="bi bi-twitter"> </i>{" "}
           </a>{" "}
-          <a href="github.com/radhikakakkar">
+          <a target="_blank" href="https://github.com/radhikakakkar">
             <i id="footer-icon" className="bi bi-github"> </i>{" "}
           </a>{" "}
-          <a href="in.com/in/radhika-kakkar-bb6824193/">
+          <a target="_blank" href="https://www.linkedin.com/in/radhika-kakkar-bb6824193">
             <i id="footer-icon" className="bi bi-linkedin"> </i>{" "}
           </a>{" "}
         </div>

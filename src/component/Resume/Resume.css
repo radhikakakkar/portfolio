@@ -74,6 +74,10 @@
   display: flex;
 }
 
+.resume-list>ul>li>a {
+  color: black !important;
+}
+
 ul.nav.nav-pills {
   height: 100% !important;
   display: flex;
@@ -85,7 +89,7 @@ li.nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: black !important;
 }
 
 li>a.nav-link {

@@ -98,9 +98,7 @@
     /* color: white; */
     margin: auto;
     font-weight: 800;
-    /* outline: #ffd49c 4px solid; */
-    /* margin-top: -44px ; */
-    /* margin-top: -44px !important; */
+
 
 }
 
@@ -117,13 +115,13 @@
     margin-top: 10px;
 }
 
+/* 
 .about-cards-div div {
     margin: 10px;
-}
+} */
 
 .about-cards {
     outline: #ffd49c 4px solid;
-
     background-color: white;
     font-size: 20px;
     margin: 10px 10px 10px 0;
@@ -340,10 +338,10 @@
         outline: #ffd49c 4px solid;
         background-color: white;
         font-size: 15px;
-        margin: 5px 5px 5px 0;
-        margin: auto;
+        margin: 10px 10px 10px 0;
         height: 6em;
         width: 6em;
+        margin-top: 5px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -353,8 +351,7 @@
 
     .about-cards:hover {
         outline: none;
-        margin-top: -1px !important;
-        margin-left: 5px;
+        margin-top: -2px;
         background-color: transparent;
         font-weight: 800 !important;
 
@@ -377,9 +374,14 @@
         height: 25em;
         width: 100%;
         margin-top: 50%;
+        outline: none;
         /* margin: auto; */
         /* margin: none !important; */
         font-weight: 800;
 
     }
+
+    /* .about-cards-div div {
+        margin: 0px;
+    } */
 }

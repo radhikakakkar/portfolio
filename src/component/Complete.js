@@ -9,7 +9,7 @@ import {
 import Projects from "./Projects/Projects";
 import Resume from "./Resume/Resume";
 import Contact from "./Contact/Contact";
-import Header from "./Header/Header";
+
 import About from "./AboutMe/About";
 import Background from "./background/Background";
 import Profile from "./Profile/Profile";

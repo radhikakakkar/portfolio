@@ -89,7 +89,7 @@ export default function Profile() {
                 </span>
               </div>
               <div className="name-div-back">
-                <span id="profile-greet">IT'S GREAT TO HAVE YOU HERE!</span>
+                <span id="profile-greet"> Welcome to my Portfolio! </span>
               </div>
 
             </div>
@@ -108,7 +108,7 @@ export default function Profile() {
             />
           </div> */}
           {/* <div id="get-resume-div">
-            <a href="Resume.pdf" download="radhika kakkar.pdf">
+            <a href="" download="radhika kakkar.pdf">
               <button className="download-btn">GET RESUME</button>
             </a>
           </div> */}
@@ -117,10 +117,10 @@ export default function Profile() {
               <a target="_blank" href="https://twitter.com/radhikakkar">
                 <i className="bi bi-twitter"></i>
               </a>
-              <a target="_blank" href="github.com/radhikakakkar">
+              <a target="_blank" href="https://github.com/radhikakakkar">
                 <i className="bi bi-github"></i>
               </a>
-              <a target="_blank" href="in.com/in/radhika-kakkar-bb6824193/">
+              <a target="_blank" href="https://www.linkedin.com/in/radhika-kakkar-bb6824193">
                 <i className="bi bi-linkedin"></i>
               </a>
             </div>

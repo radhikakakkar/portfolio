@@ -7,14 +7,10 @@ import SideNav from "../side-nav/SideNav";
 
 function Resume() {
   const navigate = useNavigate();
-  const comp_name = "Resume";
-  const comp_description = "My formal bio details";
+
   return (
     <div className="resume-container">
-      <div className="resume-header">
-        {/* <CompHead comp_name={comp_name} comp_description={comp_description} /> */}
 
-      </div>
       <div className="resume-body">
         <div className="resume-side-bar">
           <div className="resume-icon-bar">
@@ -268,13 +264,13 @@ function Resume() {
       </a>
       <div id="icons-div">
         <div className="details-icons">
-          <a href="https://twitter.com/radhikakkar">
+          <a target="_blank" href="https://twitter.com/radhikakkar">
             <i id="footer-icon" className="bi bi-twitter"> </i>{" "}
           </a>{" "}
-          <a href="github.com/radhikakakkar">
+          <a target="_blank" href="https://github.com/radhikakakkar">
             <i id="footer-icon" className="bi bi-github"> </i>{" "}
           </a>{" "}
-          <a href="in.com/in/radhika-kakkar-bb6824193/">
+          <a target="_blank" href="https://www.linkedin.com/in/radhika-kakkar-bb6824193">
             <i id="footer-icon" className="bi bi-linkedin"> </i>{" "}
           </a>{" "}
         </div>

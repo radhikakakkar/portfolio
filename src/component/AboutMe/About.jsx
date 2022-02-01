@@ -8,8 +8,7 @@ import { useNavigate } from "react-router-dom";
 function About() {
   const navigate = useNavigate();
 
-  const comp_name = "About Me";
-  const comp_description = "In a snippet...";
+  
   const about_me = "about_me";
   return (
     <div className="about-container">
@@ -20,7 +19,7 @@ function About() {
         {/* </div> */}
         {/* <img src={require("../../assets/Home/hanging.png")} />{" "} */}
           
-          {/* <CompHead comp_name={comp_name} comp_description={comp_description} /> */}{" "}
+        
           {/* <img src={require("../../assets/Home/hanging-board.jpeg")} />  */}{" "}
           
         {/* </div> */}
@@ -76,13 +75,13 @@ function About() {
       </a>
       <div id="icons-div">
         <div className="details-icons">
-          <a href="https://twitter.com/radhikakkar">
+          <a target="_blank" href="https://twitter.com/radhikakkar">
             <i id="footer-icon" className="bi bi-twitter"> </i>{" "}
           </a>{" "}
-          <a href="github.com/radhikakakkar">
+          <a target="_blank" href="https://github.com/radhikakakkar">
             <i id="footer-icon" className="bi bi-github"> </i>{" "}
           </a>{" "}
-          <a href="in.com/in/radhika-kakkar-bb6824193/">
+          <a target="_blank" href="https://www.linkedin.com/in/radhika-kakkar-bb6824193">
             <i id="footer-icon" className="bi bi-linkedin"> </i>{" "}
           </a>{" "}
         </div>{" "}
