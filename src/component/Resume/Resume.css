@@ -56,6 +56,9 @@
 }
 
 
+.resume-icon-bar>.nav-pills .nav-link.active {
+  background-color: transparent !important;
+}
 
 .resume-icon-bar a {
   pointer-events: none;
@@ -488,7 +491,7 @@ li.interests-li {
   }
 
   .resume-icon-bar a {
-    pointer-events: auto;
+    pointer-events: auto !important;
   }
 
   .resume-icon-bar>i {

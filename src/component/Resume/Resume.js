@@ -15,21 +15,32 @@ function Resume() {
         <div className="resume-side-bar">
           <div className="resume-icon-bar">
             {/* i am icon bar */}
-            <a className="nav nav-pills nav-item nav-link active" id="icon-bar-links" href="#education" data-toggle="tab">
-              <i className="fas fa-user-graduate"></i></a>
-
-            <a className="nav nav-pills nav-item nav-link" id="icon-bar-links" href="#experience" data-toggle="tab">
-              <i className="fas fa-briefcase"></i>
-            </a>
-            <a className="nav nav-pills nav-item nav-link" id="icon-bar-links" href="#skills" data-toggle="tab">
-              <i className="fas fa-laptop-code"></i>
-            </a>
-            <a className="nav nav-pills nav-item nav-link" id="icon-bar-links" href="#projects-resume" data-toggle="tab">
-              <i className="bi bi-person-workspace"></i>
-            </a>
-            <a className="nav nav-pills nav-item nav-link" id="icon-bar-links" href="#interests" data-toggle="tab">
-              <i className="fas fa-music"></i>
-            </a>
+            <ul className="nav nav-pills nav-fill" id="icon-bar-ul">
+              <li className="nav-item" id="icon-bar-items">
+                <a className="nav-link active" id="icon-bar-links" href="#education" data-toggle="tab">
+                  <i className="fas fa-user-graduate"></i></a>
+              </li>
+              <li className="nav-item" id="icon-bar-items">
+                <a className="nav-link" id="icon-bar-links" href="#experience" data-toggle="tab">
+                  <i className="fas fa-briefcase"></i>
+                </a>
+              </li>
+              <li className="nav-item" id="icon-bar-items">
+                <a className=" nav-link" id="icon-bar-links" href="#skills" data-toggle="tab">
+                  <i className="fas fa-laptop-code"></i>
+                </a>
+              </li>
+              <li className="nav-item" id="icon-bar-items">
+                <a className=" nav-link" id="icon-bar-links" href="#projects-resume" data-toggle="tab">
+                  <i className="bi bi-person-workspace"></i>
+                </a>
+              </li>
+              <li className="nav-item" id="icon-bar-items">
+                <a className=" nav-link" id="icon-bar-links" href="#interests" data-toggle="tab">
+                  <i className="fas fa-music"></i>
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div className="resume-list">

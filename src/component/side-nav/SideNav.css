@@ -51,9 +51,12 @@
     background-color: white;
     padding: 10%;
     border-radius: 20px;
+    /* height: 60px;
+    width: 60px;
+    margin: 10px 0; */
     height: 14%;
     width: 55%;
-    margin: 10px 0;
+    margin: 1em 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,9 +64,12 @@
 }
 
 .side-nav-component:hover {
-    height: 14.5%;
-    width: 56%;
-    margin: 9.5% 0 !important;
+    /* height: 62px;
+    width: 62px;
+    margin: 9% 0 !important; */
+    height: 15%;
+    width: 55%;
+    margin: 0.86em 0 !important;
 }
 
 .side-nav-component>i {
