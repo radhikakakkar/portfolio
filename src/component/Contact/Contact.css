@@ -7,7 +7,8 @@
 
 .contact-body {
   width: 80%;
-  height: 68%;
+  /* height: 68%; */
+  height: 76%;
   margin: auto;
   display: flex;
 }
@@ -240,7 +241,7 @@
 
   #contact-form {
     height: 50vh;
-    margin-top: 15%;
+    margin-top: 11%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

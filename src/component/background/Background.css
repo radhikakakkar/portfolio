@@ -1,7 +1,5 @@
 .bg-container {
   height: 100vh;
   background-color: #9cc7ff;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: auto;
 }
-

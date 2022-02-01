@@ -295,10 +295,15 @@
   .main-nav-component {
     width: 9em;
     height: 9em;
+
   }
 
   .main-nav>.grid-row {
     margin: 10px;
+  }
+
+  .flip-back {
+    font-size: 30px;
   }
 
   #profile-name,
@@ -313,4 +318,3 @@
     width: 100%;
   }
 }
-
