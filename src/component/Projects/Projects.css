@@ -123,3 +123,32 @@
   width: 10em;
   margin-top: 10px;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+  .projects-body {
+    width: 100%;
+    height: 68%;
+    margin: auto;
+    margin-top: 23%;
+    padding: 0 10%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+  }
+
+  .projects-row1,
+  .projects-row2,
+  .projects-row3,
+  .projects-row4 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 5fr;
+    padding: 0;
+  }
+
+  .loading-projects {
+    margin-left: 4em;
+  }
+}

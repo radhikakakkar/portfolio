@@ -164,11 +164,13 @@
   text-align: right;
 
 }
-.space-div-icons{
+
+.space-div-icons {
   margin: 10px;
   text-align: right;
   margin-right: 0;
 }
+
 .space-div-icons>span {
   margin: 10px;
   font-size: 20px;
@@ -202,3 +204,49 @@
 /* .contact-space-div img {
   width: 200px;
 } */
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+
+  .contact-body {
+    width: 100%;
+    /* margin-top: 23%; */
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .contact-body>div {
+    margin-top: 23%;
+
+  }
+
+  .contact-form-div {
+    width: 90%;
+    margin: auto;
+
+  }
+
+  .contact-space-div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+
+  }
+
+  #contact-form {
+    height: 50vh;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+  }
+
+}

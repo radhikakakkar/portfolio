@@ -9,9 +9,11 @@
   height: 75vh;
   width: 100%;
 }
+
 .resume-header {
   height: 25%;
 }
+
 .resume-body {
   display: flex;
   flex-direction: row;
@@ -41,13 +43,31 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+
 }
-.resume-icon-bar i {
+
+#icon-bar-links {
   height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black !important;
+  font-size: 23px;
 }
+
+
+
+.resume-icon-bar a {
+  pointer-events: none;
+}
+
+/* .resume-icon-bar i {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .resume-list {
   width: 80%;
   padding: 30px 10px 30px 0px;
@@ -67,17 +87,19 @@ li.nav-item {
   justify-content: center;
   color: black;
 }
-li > a.nav-link {
+
+li>a.nav-link {
   font-size: 20px;
 
   font-weight: 800;
 }
-li > a.nav-link:hover {
+
+li>a.nav-link:hover {
   text-shadow: 0px 1px 2px grey;
   color: black !important;
 }
 
-.resume-list ul li > .active {
+.resume-list ul li>.active {
   background-color: #ffd49c !important;
   /* transition: background-color 0.2s ease-in; */
   /* transition: all 1s ease-in; */
@@ -88,7 +110,8 @@ li > a.nav-link:hover {
   color: black !important;
   font-weight: bold;
 }
-.resume-list ul li > a:hover {
+
+.resume-list ul li>a:hover {
   background-color: #ffd49c !important;
   /* transition: background-color 0.2s ease-in; */
   /* transition: all 1s ease-in; */
@@ -100,25 +123,30 @@ li > a.nav-link:hover {
   color: black !important;
   font-weight: bold;
 }
+
 .resume-content {
   width: 100%;
   position: relative;
   height: 100%;
   margin: 0 15px;
 }
-.tab-content > .active {
+
+.tab-content>.active {
   background-color: white !important;
 }
 
 .tab-content {
   height: 100%;
 }
+
 .tab-pane {
   height: 100%;
 }
-.tab-pane > div {
+
+.tab-pane>div {
   height: 100%;
 }
+
 /* education-section */
 .education-section {
   margin: auto;
@@ -127,52 +155,68 @@ li > a.nav-link:hover {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .schools {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.schools > li {
+
+.schools>li {
   padding: 20px;
   height: 50%;
 }
-.school-li > p {
+
+.school-li>p {
   padding-top: 20px;
   color: grey;
 }
+
 ul.schools {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
+  /* Remove default bullets */
 }
 
 ul.schools li::before {
-  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #ffd49c; /* Change the color */
-  font-weight: 900; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ffd49c;
+  /* Change the color */
+  font-weight: 900;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
 }
+
 .year-labels {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.year-labels > div {
+
+.year-labels>div {
   padding: 20px;
   height: 50%;
 }
-.year-labels > div > span {
+
+.year-labels>div>span {
   background: #ffd49c;
   border-radius: 20px;
   padding: 5px;
   font-weight: 700;
 }
+
 .school-header {
   font-size: 20px;
   font-weight: 700;
   color: black;
   text-shadow: 3px 2px 2px #ced4da;
 }
+
 /* experience-section */
 .experience-section {
   margin: auto;
@@ -181,37 +225,50 @@ ul.schools li::before {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .works {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.works > li {
+
+.works>li {
   padding: 20px;
   height: 100%;
 }
+
 .work-header {
   font-weight: 700;
   font-size: 20px;
   color: black;
   text-shadow: 3px 2px 2px #ced4da;
 }
-.work-li > p {
+
+.work-li>p {
   padding-top: 20px;
   color: grey;
 }
+
 ul.works {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
+  /* Remove default bullets */
 }
 
 ul.works li::before {
-  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #ffd49c; /* Change the color */
-  font-weight: 900; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ffd49c;
+  /* Change the color */
+  font-weight: 900;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
 }
+
 /* skills section */
 
 .skills-section {
@@ -220,7 +277,9 @@ ul.works li::before {
   /* display: flex; */
   /* flex-direction: row; */
   /* justify-content: space-between; */
+
 }
+
 .skills {
   /* webkit-column-count: 2; Chrome/Opera, Safari */
   /* -moz-column-count: 2; /* Mozilla Firefox */
@@ -230,12 +289,14 @@ ul.works li::before {
   justify-content: space-around;
   align-items: center;
 }
+
 .skills-header {
   font-size: 18px;
   font-weight: 600;
   margin: 8px 5px;
   letter-spacing: 2px;
 }
+
 .skills-li {
   /* padding: 5px; */
   padding: 20px;
@@ -244,6 +305,7 @@ ul.works li::before {
   flex-direction: column;
   justify-content: space-between;
 }
+
 /* ul.skills {
   list-style: none; 
 }
@@ -260,77 +322,99 @@ ul.skills li::before {
   width: 10em;
   background-color: rgb(218, 213, 213);
 }
+
 .javascript {
   width: 90px;
   background-color: #ffd49c;
 }
+
 .php {
   width: 90px;
   background-color: #ffd49c;
 }
+
 .react-js {
   width: 90px;
   background-color: #ffd49c;
 }
+
 .node-js {
   width: 68px;
   background-color: #ffd49c;
 }
+
 .html {
   width: 90px;
   background-color: #ffd49c;
 }
+
 .css {
   width: 80px;
   background-color: #ffd49c;
 }
+
 .c {
   width: 85px;
   background-color: #ffd49c;
 }
+
 .cpp {
   width: 80px;
   background-color: #ffd49c;
 }
+
 .dsa {
   width: 70px;
   background-color: #ffd49c;
 }
+
 .python {
   width: 65px;
   background-color: #ffd49c;
 }
+
 .oop {
   width: 85px;
   background-color: #ffd49c;
 }
+
 .sql {
   width: 70px;
   background-color: #ffd49c;
 }
+
 .projects-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 #projects-header {
   font-size: 26px;
   font-weight: 600;
   margin: 8px 5px;
   letter-spacing: 2px;
 }
-.projects-section > a {
-  text-decoration: none;
-  color: #9cc7ff;
-  font-size: 20px;
+
+.projects-section {
+  text-align: center;
 }
+
+.projects-section>a {
+  text-decoration: none;
+  color: #9cc7ff !important;
+  font-size: 25px;
+  font-weight: 700;
+}
+
 .interests-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+
 /* #interests{
   display: flex;
   flex-direction: column;
@@ -343,30 +427,111 @@ ul.skills li::before {
   color: black;
   text-shadow: 3px 2px 2px #ced4da;
 }
+
 div.interests-description {
   margin: 6px 5px;
 }
+
 ul.interests {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
+  /* Remove default bullets */
 }
 
 ul.interests li::before {
-  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #ffd49c; /* Change the color */
-  font-weight: 900; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ffd49c;
+  /* Change the color */
+  font-weight: 900;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
 }
+
 li.interests-li {
   margin: 20px 5px;
 }
+
 .interests-description {
   padding: 5px 0px;
   color: grey;
 }
+
 /* #cpp-li{
   display: flex;
   flex-direction: column;
 
 } */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .resume-body {
+    width: 100%;
+  }
+
+  .resume-side-bar {
+    width: 15%;
+    box-shadow: none;
+
+  }
+
+  .resume-icon-bar {
+    width: 100%;
+    position: relative;
+
+  }
+
+  .resume-icon-bar a {
+    pointer-events: auto;
+  }
+
+  .resume-icon-bar>i {
+
+    font-size: 1.5em;
+  }
+
+  .resume-list {
+    visibility: hidden;
+    display: none;
+    width: 0;
+  }
+
+  #icon-bar-links:hover {
+    font-size: 26px;
+  }
+
+  #icon-bar-links.active {
+    font-size: 26px;
+  }
+
+
+
+  .year-labels>div {
+    font-size: 12px;
+  }
+
+  .school-header {
+    font-size: 17.5px;
+    font-weight: 700;
+  }
+
+  .work-header {
+    font-size: 17.5px;
+    font-weight: 700;
+  }
+
+  .skills-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills {
+    padding-left: 0;
+  }
+
+
+
+}

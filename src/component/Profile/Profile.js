@@ -124,11 +124,11 @@ export default function Profile() {
                 <i className="bi bi-linkedin"></i>
               </a>
             </div>
-            <div id="get-resume-div">
+            {/* <div id="get-resume-div">
               <a href="Resume.pdf" download="radhika kakkar.pdf">
                 <button className="download-btn">GET RESUME</button>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

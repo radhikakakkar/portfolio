@@ -1,8 +1,8 @@
 .complete-container {
   height: 100%;
   width: 100%;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
 }
 
 .complete-contents {
@@ -12,6 +12,6 @@
   height: 100%;
   top: 0;
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* justify-content: flex-start;*/
 }

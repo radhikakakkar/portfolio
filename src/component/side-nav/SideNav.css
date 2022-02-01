@@ -1,4 +1,4 @@
-@keyframes fadeInAnimation {
+@keyframes fadeInAnimationSide {
     0% {
         opacity: 0.3;
         right: -100px;
@@ -10,6 +10,18 @@
     }
 }
 
+@keyframes fadeInAnimationTop {
+    0% {
+        opacity: 0.3;
+        top: -100px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
 .side-nav-container {
     position: absolute;
     width: 8%;
@@ -17,7 +29,7 @@
     top: 14%;
     height: 60%;
     background: #c4c4c4;
-    animation: fadeInAnimation ease-in-out 1.4s;
+    animation: fadeInAnimationSide ease-in-out 1.4s;
     animation-iteration-count: 1;
     /* animation-fill-mode: forwards; */
 }
@@ -135,6 +147,60 @@
         width: 80px;
         right: 4em;
     }
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    .side-nav-container {
+        position: absolute;
+        width: 100%;
+        /* right: 14%; */
+        /* left: 14%; */
+        top: 0%;
+        height: 9%;
+        animation: fadeInAnimationTop ease-in-out 1.4s;
+        animation-iteration-count: 1;
+    }
+
+    .side-nav-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .side-nav-component {
+        background-color: white;
+        padding: 7%;
+        border-radius: 20px;
+        height: 10%;
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 6px 6px 2px grey;
+    }
+
+    .side-nav-component:hover .tooltiptext {
+        display: block;
+    }
+
+    .side-nav-component:hover {
+        height: 12%;
+        width: 13%;
+        margin: 7.5% 0;
+        font-size: 1.2em;
+    }
+
+    .side-nav-component .tooltiptext {
+        top: 5.6em;
+        left: 2em;
+    }
+
 
 
 }

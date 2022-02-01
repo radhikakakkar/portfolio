@@ -17,7 +17,7 @@ function Projects() {
         {/* <CompHead comp_name={comp_name} comp_description={comp_description} /> */}
       </div>
       <section className="projects-body">
-        <div className="projects-row4">
+        <div className="projects-row4" id="project-rows">
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Portfolio website</h5>
@@ -51,7 +51,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="projects-row2">
+        <div className="projects-row2" id="project-rows">
           <div className="card">
             <div className="card-body">
               <h5 className="card-title text-center">Hangman Game</h5>
@@ -84,7 +84,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="projects-row1">
+        <div className="projects-row1" id="project-rows">
           <div className="card">
             <div className="card-body">
               <h5 className="card-title text-center">Netflix page clone</h5>
@@ -101,7 +101,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="projects-row2">
+        <div className="projects-row2" id="project-rows">
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Memory Game</h5>
@@ -133,7 +133,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="projects-row3">
+        <div className="projects-row3" id="project-rows">
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Message-Display App</h5>

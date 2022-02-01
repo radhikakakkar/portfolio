@@ -19,11 +19,21 @@ function Resume() {
         <div className="resume-side-bar">
           <div className="resume-icon-bar">
             {/* i am icon bar */}
-            <i className="fas fa-user-graduate"></i>
-            <i className="fas fa-briefcase"></i>
-            <i className="fas fa-laptop-code"></i>
-            <i className="bi bi-person-workspace"></i>
-            <i className="fas fa-music"></i>
+            <a className="nav nav-pills nav-item nav-link active" id="icon-bar-links" href="#education" data-toggle="tab">
+              <i className="fas fa-user-graduate"></i></a>
+
+            <a className="nav nav-pills nav-item nav-link" id="icon-bar-links" href="#experience" data-toggle="tab">
+              <i className="fas fa-briefcase"></i>
+            </a>
+            <a className="nav nav-pills nav-item nav-link" id="icon-bar-links" href="#skills" data-toggle="tab">
+              <i className="fas fa-laptop-code"></i>
+            </a>
+            <a className="nav nav-pills nav-item nav-link" id="icon-bar-links" href="#projects-resume" data-toggle="tab">
+              <i className="bi bi-person-workspace"></i>
+            </a>
+            <a className="nav nav-pills nav-item nav-link" id="icon-bar-links" href="#interests" data-toggle="tab">
+              <i className="fas fa-music"></i>
+            </a>
           </div>
 
           <div className="resume-list">
