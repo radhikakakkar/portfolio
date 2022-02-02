@@ -478,6 +478,7 @@ li.interests-li {
 @media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .resume-body {
     width: 100%;
+    margin-bottom: 1.7em;
   }
 
   .resume-side-bar {
@@ -545,7 +546,46 @@ li.interests-li {
     font-size: 25px;
     bottom: -8px;
     left: -18px;
+  }
+
+
 }
 
+@media(orientation:landscape) {
+  .year-labels>div {
+    font-size: 12px;
+  }
+
+  .school-header {
+    font-size: 17.5px;
+    font-weight: 700;
+  }
+
+  .work-header {
+    font-size: 17.5px;
+    font-weight: 700;
+  }
+
+
+  .tab-pane>div {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  .schools>li {
+    padding: 20px;
+    height: 50%;
+    margin-bottom: 5em;
+  }
+
+  .year-labels {
+    height: 188%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ul.nav.nav-pills.nav-item{
+    font-size: 1.5em;
+  } */
 
 }

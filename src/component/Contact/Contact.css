@@ -257,6 +257,41 @@
     font-size: 25px;
     bottom: -8px;
     left: -18px;
+  }
+
 }
 
+@media(orientation:landscape) {
+  .contact-body>div {
+    margin-top: 4%;
+    height: 85vh;
+  }
+
+  #contact-form>div>input:focus~.form-label,
+  #contact-form>div>input:not(:placeholder-shown)+.form-label {
+    transform: translateY(-3.8em) !important;
+    transition: 0.1s ease-out;
+    color: black;
+    font-size: 17px;
+    font-weight: 800;
+  }
+
+  #contact-form>div>textarea:focus~.form-label-t,
+  #contact-form>div>textarea:not(:placeholder-shown)+.form-label-t {
+    transform: translateY(-7.1em) !important;
+    transition: 0.1s ease-out;
+    color: black;
+    font-size: 17px;
+    font-weight: 800;
+  }
+
+
+  .connect-header {
+    font-size: 48px
+  }
+
+  .space-div-icons>span {
+
+    font-size: 16px;
+  }
 }

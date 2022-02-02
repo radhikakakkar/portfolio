@@ -278,12 +278,9 @@
     flex-direction: column;
   }
 } */
-@media(max-width:1050px) {
-  .main-nav-component {
-    width: 10em;
-    height: 10em;
-  }
-}
+
+
+
 
 @media(max-width:940px) {
   .profile-container {
@@ -316,5 +313,18 @@
 
   #name-div {
     width: 100%;
+  }
+}
+
+@media (orientation:landscape) {
+  .profile-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.3em;
+  }
+
+  .main-nav-component {
+    width: 8em;
+    height: 8em;
   }
 }

@@ -18,6 +18,9 @@ import "./Complete.css";
 function Complete() {
   return (
     <div className="complete-container">
+      {/* <div id="turn">
+        Please turn your device
+      </div> */}
       <Background />
       <div className="complete-contents">
         <Router>

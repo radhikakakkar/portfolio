@@ -14,7 +14,19 @@
   top: 0;
   position: absolute;
   overflow: auto;
-  
+
   /* overflow: hidden; */
   /* justify-content: flex-start;*/
 }
+
+/* #turn {
+  display: none;
+  z-index: 100;
+  position: fixed;
+}
+
+@media (orientation: landscape) {
+  #turn {
+    display: block;
+  }
+} */

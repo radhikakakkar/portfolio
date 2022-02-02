@@ -10,7 +10,6 @@ function Resume() {
 
   return (
     <div className="resume-container">
-
       <div className="resume-body">
         <div className="resume-side-bar">
           <div className="resume-icon-bar">

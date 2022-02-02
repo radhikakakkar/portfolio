@@ -395,3 +395,44 @@
         margin: 0px;
     } */
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .about-text {
+        font-size: 15px;
+    }
+
+}
+
+@media (orientation: landscape) {
+    .about-main {
+        margin-top: 4%;
+    }
+
+    .about-text {
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .about-cards {
+        outline: #ffd49c 4px solid;
+        background-color: white;
+        font-size: 1em;
+        margin: 10px 10px 10px 0;
+        height: 5em;
+        width: 5em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: 0.2s ease-in-out;
+    }
+
+    #home {
+        margin: 0 !important;
+    }
+
+    #icons-div {
+        bottom: 0px;
+    }
+}
