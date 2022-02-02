@@ -312,7 +312,7 @@
 
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .about-main {
         display: flex;
         flex-direction: column;
@@ -376,12 +376,19 @@
         background-color: white;
         height: 25em;
         width: 100%;
-        margin-top: 50%;
+        /* margin-top: 50%; */
+        margin-top: 36%;
         outline: none;
         /* margin: auto; */
         /* margin: none !important; */
         font-weight: 800;
 
+    }
+
+    #home {
+        font-size: 21px;
+        bottom: -8px;
+        left: -18px;
     }
 
     /* .about-cards-div div {

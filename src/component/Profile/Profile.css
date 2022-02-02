@@ -310,6 +310,10 @@
 
   }
 
+  .flip-back {
+    font-size: 30px;
+  }
+
   #name-div {
     width: 100%;
   }

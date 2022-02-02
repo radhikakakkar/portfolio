@@ -5,7 +5,7 @@
   justify-content: center;
   margin-bottom: 20px;
   overflow: auto;
-  
+
   /* position: absolute; */
   top: 4%;
   height: 75vh;
@@ -475,7 +475,7 @@ li.interests-li {
   flex-direction: column;
 
 } */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .resume-body {
     width: 100%;
   }
@@ -541,6 +541,11 @@ li.interests-li {
     padding-left: 0;
   }
 
+  #home {
+    font-size: 21px;
+    bottom: -8px;
+    left: -18px;
+}
 
 
 }

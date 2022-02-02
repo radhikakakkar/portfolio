@@ -153,4 +153,10 @@
   .loading-projects {
     margin-left: 4em;
   }
+  #home {
+    font-size: 21px;
+    bottom: -8px;
+    left: -18px;
+}
+
 }

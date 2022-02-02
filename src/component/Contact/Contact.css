@@ -253,4 +253,10 @@
     padding: 20px 0;
   }
 
+  #home {
+    font-size: 21px;
+    bottom: -8px;
+    left: -18px;
+  }
+
 }
