@@ -31,6 +31,8 @@
 .about-container {
     font-family: "ubuntu mono";
     height: 100%;
+    overflow: auto;
+
 }
 
 .about-main {

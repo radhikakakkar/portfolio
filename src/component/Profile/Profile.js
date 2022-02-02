@@ -30,13 +30,13 @@ export default function Profile() {
               </div>
             </div>
             <div
-              class="main-nav-component"
+              className="main-nav-component"
               onClick={() => navigate("/resume")}
               id="resume"
             >
               <div className="component-inner">
                 <div className="flip-front">
-                  <i class="fas fa-file accent-text"></i>
+                  <i className="fas fa-file accent-text"></i>
                 </div>
                 <div className="flip-back">
                   <span className="nav-component-text">Resume</span>
@@ -44,15 +44,15 @@ export default function Profile() {
               </div>
             </div>
           </div>
-          <div class="grid-row">
+          <div className="grid-row">
             <div
-              class="main-nav-component"
+              className="main-nav-component"
               onClick={() => navigate("/projects")}
               id="projects"
             >
               <div className="component-inner">
                 <div className="flip-front">
-                  <i class="fas fa-project-diagram accent-text"></i>
+                  <i className="fas fa-project-diagram accent-text"></i>
                 </div>
                 <div className="flip-back">
                   <span className="nav-component-text">Projects</span>
@@ -60,13 +60,13 @@ export default function Profile() {
               </div>
             </div>
             <div
-              class="main-nav-component"
+              className="main-nav-component"
               onClick={() => navigate("/contact-me")}
               id="contact-me"
             >
               <div className="component-inner">
                 <div className="flip-front">
-                  <i class="fas fa-inbox accent-text"></i>
+                  <i className="fas fa-inbox accent-text"></i>
                 </div>
                 <div className="flip-back">
                   <span className="nav-component-text">Contact me</span>

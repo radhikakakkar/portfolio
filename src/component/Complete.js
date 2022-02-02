@@ -17,7 +17,7 @@ import "./Complete.css";
 
 function Complete() {
   return (
-    <div class="complete-container">
+    <div className="complete-container">
       <Background />
       <div className="complete-contents">
         <Router>

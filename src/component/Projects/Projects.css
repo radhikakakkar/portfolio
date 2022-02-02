@@ -2,6 +2,8 @@
   font-family: "ubuntu mono";
   height: 100%;
   width: 100%;
+  overflow: auto;
+
 }
 
 .projects-body {
