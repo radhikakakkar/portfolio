@@ -404,7 +404,7 @@
 
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
     .about-main {
         margin-top: 4%;
     }
@@ -435,4 +435,4 @@
     #icons-div {
         bottom: 0px;
     }
-}
+} */

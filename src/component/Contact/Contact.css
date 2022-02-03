@@ -26,9 +26,8 @@
 }
 
 #notification {
-  margin-bottom: 20px;
-  height: 49px;
-
+  margin-bottom: 5px;
+  height: 9%;
 }
 
 #contact-form {
@@ -224,6 +223,12 @@
     overflow: scroll;
   }
 
+  #notification {
+    height: 12%;
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
   .contact-body>div {
     margin-top: 23%;
 
@@ -249,7 +254,7 @@
 
   #contact-form {
     height: 50vh;
-    margin-top: 11%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
