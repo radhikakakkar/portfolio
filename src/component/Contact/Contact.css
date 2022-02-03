@@ -25,6 +25,11 @@
   width: 45%;
 }
 
+#notification {
+  margin-bottom: 20px;
+  height: 49px;
+
+}
 
 #contact-form {
   height: 100%;
@@ -261,7 +266,7 @@
 
 }
 
-@media(orientation:landscape) {
+/* @media(orientation:landscape) {
   .contact-body>div {
     margin-top: 4%;
     height: 85vh;
@@ -294,4 +299,4 @@
 
     font-size: 16px;
   }
-}
+} */

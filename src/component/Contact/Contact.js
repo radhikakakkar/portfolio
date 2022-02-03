@@ -8,33 +8,30 @@ import { useNavigate } from "react-router-dom";
 // import {image1} from "../../assets/contact.jpg";
 
 function Contact() {
-  // function sendEmail(e) {
-  //   e.preventDefault();
 
-  //   console.log("inside sendEmail");
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_eo8fgmu",
-  //       "template_ndu19ec",
-  //       e.target,
-  //       "user_0r97fg0jiQNQYnFa3n44R"
-  //     )
-  //     .then((res) => {
-  //       console.log(res);
-  //     })
-  //     .catch((err) => console.log(err));
-  // }
-
-  // const comp_name = "Contact Me";
-  // const comp_description = "Let's keep in touch";
   const navigate = useNavigate();
 
+  function sendEmail(e) {
+    // e.preventDefault();
+
+    console.log("inside sendEmail");
+
+    emailjs
+      .sendForm(
+        "service_eo8fgmu",
+        "template_ndu19ec",
+        e.target,
+        "user_0r97fg0jiQNQYnFa3n44R"
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }
 
   function validate(e) {
-    //   console.log("i am validate");
+    console.log("i am validate");
     e.preventDefault();
-
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var text = document.getElementById("text-msg").value;
@@ -54,9 +51,10 @@ function Contact() {
         msg.innerHTML = "Enter a valid Email";
       } else {
         msg.className = "alert alert-success";
-        msg.innerHTML = name + " Your Email has been sent! Thankyou";
+        msg.innerHTML = name + ", your message has been sent! Thankyou";
       }
     }
+    sendEmail(e);
   }
 
   return (
@@ -64,7 +62,7 @@ function Contact() {
       <div className="contact-body">
         <div className="contact-form-div">
           <div id="notification"> </div>
-          <form id="contact-form">
+          <form id="contact-form" onSubmit={validate}>
             <div>
               <input
                 id="name"
@@ -80,7 +78,7 @@ function Contact() {
             <div>
               <input
                 type="text"
-                name="user-email"
+                name="email"
                 id="email"
                 className="form-control"
                 // placeholder="Email"
@@ -104,10 +102,10 @@ function Contact() {
             <div id="div-btn">
               <button
                 type="submit"
-                onClick={() => {
-                  validate();
-                  // sendEmail();
-                }}
+                // onClick={() => {
+                //   validate();
+                //   sendEmail();
+                // }}
                 className="send-btn"
               >
                 <i class="far fa-paper-plane"></i>

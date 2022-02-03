@@ -316,15 +316,15 @@
   }
 }
 
-@media (orientation:landscape) {
+/* @media (orientation:landscape) {
   .profile-container {
     display: flex;
     flex-direction: row;
     margin-top: 2.3em;
-  }
+  } */
 
-  .main-nav-component {
+  /* .main-nav-component {
     width: 8em;
     height: 8em;
-  }
-}
+  } */
+/* } */

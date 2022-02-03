@@ -188,8 +188,8 @@
 
 }
 
-@media (orientation:landscape) {
+/* @media (orientation:landscape) {
     .side-nav-component>i {
         font-size: 1.4em;
     }
-}
+} */

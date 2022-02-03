@@ -19,7 +19,7 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title">Portfolio website</h5>
               <p className="card-text">
-                A personal Portfolio website create using ReactJS
+                A personal Portfolio website created using ReactJS
               </p>
               <a
                 // target="_blank"
@@ -35,7 +35,7 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title">On the Go</h5>
               <p className="card-text">
-                A mobile first application created for a hackathon, created using MERN stack.
+                A mobile first application created using MERN stack for a hackathon.
               </p>
               <a
                 target="_blank"
@@ -86,7 +86,7 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title text-center">Netflix page clone</h5>
               <p className="card-text text-center">
-                Created using HTML,CSS and JavaScript.
+                Created using HTML, CSS and JavaScript.
               </p>
               <a
                 target="_blank"
@@ -103,7 +103,7 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title">Memory Game</h5>
               <p className="card-text">
-                Created using HTML,CSS and JavaScript.
+                Created using HTML, CSS and JavaScript.
               </p>
               <a
                 target="_blank"
@@ -118,7 +118,7 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title">Whack-a-Mole Game</h5>
               <p className="card-text">
-                Created using HTML,CSS,JavaScript and Bootstrap.
+                Created using HTML, CSS, JavaScript and Bootstrap.
               </p>
               <a
                 target="_blank"
@@ -135,7 +135,7 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title">Message-Display App</h5>
               <p className="card-text">
-                Created front-end using HTML, CSS & JavaScript, back-end with
+                Created using HTML, CSS, JavaScript along with
                 PHP.
               </p>
               <a
@@ -151,8 +151,8 @@ function Projects() {
             <div className="card-body">
               <h5 className="card-title">Login/Signup Page</h5>
               <p className="card-text">
-                Created front-end using HTML,CSS,JavaScript & Bootstrap,
-                back-end with PHP, database with SQL{" "}
+                Created using HTML, CSS, JavaScript,Bootstrap,
+                back-end with PHP and SQL
               </p>
               <a
                 target="_blank"
@@ -198,7 +198,7 @@ function Projects() {
           </div>
         </div> */}
         <div className="loading-projects">
-          <span>Loading 10 more in 5 days ...</span>
+          <span>Loading 10 more in 2 days ...</span>
           <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated"
             role="progressbar"
             aria-valuenow="75"
