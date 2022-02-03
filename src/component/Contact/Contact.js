@@ -52,9 +52,10 @@ function Contact() {
       } else {
         msg.className = "alert alert-success";
         msg.innerHTML = name + ", your message has been sent! Thankyou";
+        sendEmail(e);
       }
     }
-    sendEmail(e);
+
   }
 
   return (
