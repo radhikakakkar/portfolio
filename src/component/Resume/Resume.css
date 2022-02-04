@@ -163,6 +163,7 @@ li>a.nav-link:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: scroll;
 }
 
 .schools {
@@ -173,7 +174,7 @@ li>a.nav-link:hover {
 
 .schools>li {
   padding: 20px;
-  height: 50%;
+  height: 100%;
 }
 
 .school-li>p {
@@ -282,6 +283,7 @@ ul.works li::before {
 
 .skills-section {
   margin: auto;
+  overflow: scroll;
   /* padding: 20px; */
   /* display: flex; */
   /* flex-direction: row; */
@@ -422,6 +424,7 @@ ul.skills li::before {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  overflow: scroll;
 }
 
 /* #interests{
@@ -584,7 +587,7 @@ li.interests-li {
     flex-direction: column;
   } */
 
-  /* ul.nav.nav-pills.nav-item{
+/* ul.nav.nav-pills.nav-item{
     font-size: 1.5em;
   } */
 
