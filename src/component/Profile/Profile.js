@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import "./Profile.css";
 // import Resume from ''
 // import userVid from "../../../assets/Home/user.mp4";
