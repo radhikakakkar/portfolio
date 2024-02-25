@@ -15,7 +15,7 @@
   display: flex;
 }
 
-.contact-body>div {
+.contact-body > div {
   margin-top: 7%;
   height: 70vh;
 }
@@ -40,7 +40,7 @@
   padding: 20px 0;
 }
 
-#contact-form>div {
+#contact-form > div {
   width: 100%;
 }
 
@@ -57,7 +57,7 @@
   color: #ffd49c;
 }
 
-#contact-form>div>input {
+#contact-form > div > input {
   width: 100%;
   height: 42px;
   border: 1px solid rgba(200, 200, 200, 0.3) !important;
@@ -65,14 +65,14 @@
   background-color: white;
 }
 
-#contact-form>div>input:focus {
+#contact-form > div > input:focus {
   outline: #ffd49c !important;
   border: none !important;
   background-color: white;
 }
 
-#contact-form>div>input:focus~.form-label,
-#contact-form>div>input:not(:placeholder-shown)+.form-label {
+#contact-form > div > input:focus ~ .form-label,
+#contact-form > div > input:not(:placeholder-shown) + .form-label {
   transform: translateY(-4em) !important;
   transition: 0.1s ease-out;
   color: black;
@@ -80,12 +80,11 @@
   font-weight: 800;
 }
 
-#contact-form>div>input::-webkit-input-placeholder {
+#contact-form > div > input::-webkit-input-placeholder {
   color: transparent;
 }
 
-
-#contact-form>div>textarea {
+#contact-form > div > textarea {
   width: 100%;
   height: 100px;
   border: 1px solid rgba(200, 200, 200, 0.3) !important;
@@ -93,14 +92,14 @@
   background-color: white;
 }
 
-#contact-form>div>textarea:focus {
+#contact-form > div > textarea:focus {
   outline: none !important;
   border: none !important;
   background-color: white;
 }
 
-#contact-form>div>textarea:focus~.form-label-t,
-#contact-form>div>textarea:not(:placeholder-shown)+.form-label-t {
+#contact-form > div > textarea:focus ~ .form-label-t,
+#contact-form > div > textarea:not(:placeholder-shown) + .form-label-t {
   transform: translateY(-7em) !important;
   transition: 0.1s ease-out;
   color: black;
@@ -108,7 +107,7 @@
   font-weight: 800;
 }
 
-#contact-form>div>textarea::-webkit-input-placeholder {
+#contact-form > div > textarea::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -132,7 +131,7 @@
   margin: 10px 0;
 }
 
-#div-btn>button.send-btn {
+#div-btn > button.send-btn {
   color: #ffd49c;
   width: 50%;
   background-color: white;
@@ -142,13 +141,13 @@
   font-weight: 700 !important;
 }
 
-#div-btn>button.send-btn:hover {
+#div-btn > button.send-btn:hover {
   font-size: 17.5px;
   margin: -2px 0;
   font-weight: 700;
   /* font-size: 16px; */
-  color: #9cc7ff;
-  border: 2px dotted #9cc7ff;
+  color: #b8dbffbf;
+  border: 2px dotted #b8dbffbf;
 }
 
 .contact-space-div {
@@ -170,7 +169,6 @@
   font-weight: 800;
   color: black;
   text-align: right;
-
 }
 
 .space-div-icons {
@@ -179,44 +177,21 @@
   margin-right: 0;
 }
 
-.space-div-icons>span {
+.space-div-icons > span {
   margin: 10px;
   font-size: 20px;
 }
 
-.space-div-icons>i {
+.space-div-icons > i {
   font-size: 20px;
   color: #ffd49c;
 }
 
-/* .contact-space-div #row1 {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: 2fr 2fr;
+#view-cv-span:hover {
+  text-decoration: underline;
 }
-.contact-space-div #row2 {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  grid-template-columns: 5fr;
-}
-.contact-space-div #row3 {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: 3fr 2fr;
-} */
-
-/* .contact-space-div img {
-  width: 200px;
-} */
-
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-
-
   .contact-body {
     width: 100%;
     /* margin-top: 23%; */
@@ -232,15 +207,13 @@
     line-height: 14px;
   }
 
-  .contact-body>div {
+  .contact-body > div {
     margin-top: 23%;
-
   }
 
   .contact-form-div {
     width: 90%;
     margin: auto;
-
   }
 
   .contact-space-div {
@@ -252,7 +225,6 @@
     flex-direction: column;
 
     /* text-align: center; */
-
   }
 
   #contact-form {
@@ -271,7 +243,6 @@
     bottom: -8px;
     left: -18px;
   }
-
 }
 
 /* @media(orientation:landscape) {

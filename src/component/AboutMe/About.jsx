@@ -1,88 +1,130 @@
 import React from "react";
 import CompHead from "../comp-header/CompHead";
 import SideNav from "../side-nav/SideNav";
+import Carousel from "react-images";
+// import $ from "jquery";
+// import "lightbox2/dist/css/lightbox.min.css"; // Import Lightbox CSS
+// import "lightbox2/dist/js/lightbox.min.js"; // Import Lightbox JS
 import "./About.css";
 import { useNavigate } from "react-router-dom";
 
-
 function About() {
   const navigate = useNavigate();
-
-  
+  const images = [
+    { source: "/images/metro.JPG" },
+    { source: "/images/manipal.jpg" },
+    { source: "/images/synopsys.jpg" },
+    { source: "/images/room.jpg" },
+    { source: "/images/car.JPG" },
+  ];
   const about_me = "about_me";
   return (
     <div className="about-container">
       <div className="about-main">
-        {/* <div className="about-header">
-        <div className="image-txt"> */}
-        {/* <p> About Me </p> */}
-        {/* </div> */}
-        {/* <img src={require("../../assets/Home/hanging.png")} />{" "} */}
-          
-        
-          {/* <img src={require("../../assets/Home/hanging-board.jpeg")} />  */}{" "}
-          
-        {/* </div> */}
-        <div className="about-body">
-            <div className="about-text">
-             <p>
-            I am an undergrad Information Technology student who is intrigued by development on the web with a
-            knack for Frontend.I am currently working on my UI / UX skills and
-            absorbing newer design tools. Creating & learning by the day, I
-            aspire to become an excellent full stack developer among alot of
-            other things;)
+        <div id="about-my-image">
+          <img id="my-img" src="/me.jpg" />
+        </div>
+        <div id="about-text">
+          <p>Hey, I'm Radhika 🙌🏻 </p>
+          <p>I love wearing weird glasses & writing code 👩🏻‍💻.</p>
+          <p>
+            As a recent CS graduate, I possess a blend of expertise in system
+            development and enhancement, coupled with a solid foundation in
+            computer fundamentals and programming 🦾.{" "}
           </p>
-          </div>
-          <div className="about-cards-div">
-          <div className="about-cards" id="front-end-developer">
-          <span> Frontend Developer</span>
-          <div className="rating">
-          <i class="fas fa-heart"></i>
-          <i class="fas fa-heart"></i>
-          <i class="fas fa-heart"></i>
-          <i class="fas fa-heart"></i>
-          </div>
-          </div>
-          <div className="about-cards" id="front-end-developer">
-          <span> UI/UX Designer</span>
-          <div className="rating">
-          <i class="fas fa-heart"></i>
-          <i class="fas fa-heart"></i>
-          {/* <i class="fas fa-heart"></i>
-          <i class="fas fa-heart"></i> */}
-          </div>
-          </div>
-          <div className="about-cards" id="front-end-developer">
-          <span> Backend Developer</span>
-          <div className="rating">
-          <i class="fas fa-heart"></i>
-          <i class="fas fa-heart"></i>
-          <i class="fas fa-heart"></i>
-          {/* <i class="fas fa-heart"></i> */}
-          </div>
-          </div>
-          </div>
-          {/* <div className="about-cards" id=">
+        </div>
+        <span></span>
+        <div id="about-my-gadgets-music-container">
+          {/* <div id="my-gadgets">
+            <div id="my-gadgets-1">
+              <p>Uses</p>
+              <ul>
+                <li>13" Macbook pro, M2</li>
+                <li>iPhone XR</li>
+                <li>AirPods Pro 2</li>
+              </ul>
+            </div>
 
+            <div id="my-gadgets-2">
+              <p>Dev tools</p>
+              <ul>
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>Notion</li>
+              </ul>
+            </div>
           </div> */}
+          <div id="my-gadgets" class="container">
+            <div class="carousel-view">
+              {/* <button id="prev-btn" class="prev-btn"> */}
+              {/* {" "} */}
+              {/* </button> */}
+              <div id="items-list" class="items-list">
+                <div class="item">
+                  <span style={{ "font-size": "15px", "font-weight": "700" }}>
+                    I use,
+                  </span>
+                  <ul id="my-gadgets-list">
+                    <li>13" Macbook pro, M2</li>
+                    <span class="list-desc">
+                      Never going nowhere without this
+                    </span>
 
+                    <li>iPhone XR</li>
+                    <span class="list-desc">
+                      The newer iPhones just don't cut it
+                    </span>
+                    <li>AirPods Pro 2</li>
+                    <span class="list-desc">My go to focus inducer</span>
+                  </ul>
+                </div>
+
+                {/* <div class="item" id="my-gadgets-2">
+                  <p>Dev tools</p>
+                  <ul>
+                    <li>VS Code</li>
+                    <li>Postman</li>
+                    <li>Notion</li>
+                  </ul>
+                </div> */}
+              </div>
+              {/* <button id="next-btn" class="next-btn"> */}
+              {/* {" "} */}
+              {/* </button> */}
+            </div>
+          </div>
+          <div style={{ "text-align": "center" }} id="my-apple-music-card">
+            <p>What I'm listening to </p>
+            <p>Loading... ⚙️</p>
+          </div>
+        </div>
+        <div id="pov-span">
+          <span>POV</span>
+        </div>
+        <div id="about-my-updates">
+          <Carousel views={images} />
         </div>
       </div>
       <SideNav active_ele={about_me} />{" "}
       <a onClick={() => navigate("/")}>
-        <i id="home" class="fas fa-home">
-        </i>
+        <i id="home" class="fas fa-home"></i>
       </a>
       <div id="icons-div">
         <div className="details-icons">
           <a target="_blank" href="https://twitter.com/radhikakkar">
-            <i id="footer-icon" className="bi bi-twitter"> </i>{" "}
+            <i id="footer-icon" className="bi bi-twitter">
+              {" "}
+            </i>{" "}
           </a>{" "}
           <a target="_blank" href="https://github.com/radhikakakkar">
-            <i id="footer-icon" className="bi bi-github"> </i>{" "}
+            <i id="footer-icon" className="bi bi-github">
+              {" "}
+            </i>{" "}
           </a>{" "}
-          <a target="_blank" href="https://www.linkedin.com/in/radhika-kakkar-bb6824193">
-            <i id="footer-icon" className="bi bi-linkedin"> </i>{" "}
+          <a target="_blank" href="https://www.linkedin.com/in/radhika-kakkar/">
+            <i id="footer-icon" className="bi bi-linkedin">
+              {" "}
+            </i>{" "}
           </a>{" "}
         </div>{" "}
       </div>{" "}

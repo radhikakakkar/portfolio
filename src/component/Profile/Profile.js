@@ -11,7 +11,6 @@ export default function Profile() {
 
   return (
     <div className="profile-container">
-
       <div className="profile-left">
         <div className="main-nav">
           <div className="grid-row">
@@ -79,21 +78,17 @@ export default function Profile() {
 
       <div className="profile-right">
         <div className="intro-div">
-
           <div id="name-div">
             <div className="name-div-component">
-
               <div className="name-div-front">
                 <span id="profile-name">
                   HEY, I AM <span className="accent-text">RADHIKA KAKKAR</span>
                 </span>
               </div>
               <div className="name-div-back">
-                <span id="profile-greet"> Welcome to my Portfolio! </span>
+                <span id="profile-greet"> Welcome to my World! </span>
               </div>
-
             </div>
-
           </div>
           {/* <div id="greetings-div">
             <Typical
@@ -120,7 +115,10 @@ export default function Profile() {
               <a target="_blank" href="https://github.com/radhikakakkar">
                 <i className="bi bi-github"></i>
               </a>
-              <a target="_blank" href="https://www.linkedin.com/in/radhika-kakkar-bb6824193">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/radhika-kakkar/"
+              >
                 <i className="bi bi-linkedin"></i>
               </a>
             </div>
@@ -132,7 +130,7 @@ export default function Profile() {
           </div>
         </div>
       </div>
-    </div >
+    </div>
 
     // <Footer />
   );

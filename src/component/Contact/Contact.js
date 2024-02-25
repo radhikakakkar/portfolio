@@ -8,21 +8,13 @@ import { useNavigate } from "react-router-dom";
 // import {image1} from "../../assets/contact.jpg";
 
 function Contact() {
-
   const navigate = useNavigate();
 
   function sendEmail(e) {
-    // e.preventDefault();
-
     console.log("inside sendEmail");
 
     emailjs
-      .sendForm(
-        "service_eo8fgmu",
-        "template_ndu19ec",
-        e.target,
-        "user_0r97fg0jiQNQYnFa3n44R"
-      )
+      .sendForm("service_7p7gdvy", "template_cdnfuun", e.target)
       .then((res) => {
         console.log(res);
       })
@@ -52,10 +44,9 @@ function Contact() {
       } else {
         msg.className = "alert alert-success";
         msg.innerHTML = name + ", your message has been sent! Thankyou";
-        sendEmail(e);
+        sendEmail(msg);
       }
     }
-
   }
 
   return (
@@ -115,7 +106,6 @@ function Contact() {
           </form>
         </div>
         <div className="contact-space-div">
-
           <div className="space-div-top">
             <div className="connect-header">
               <p>Let's</p>
@@ -129,7 +119,30 @@ function Contact() {
             </div>
             <div className="space-div-icons" id="location">
               <i class="fas fa-map-pin"></i>
-              <span>Delhi/Jaipur</span>
+              <span>New Delhi</span>
+            </div>
+            <div className="space-div-icons" id="location">
+              <a
+                target="_blank"
+                style={{ "text-decoration": "none" }}
+                href="https://docs.google.com/document/d/1tfjBZkql4QM-Ibb9xWL7y8qtIeLaMRdyE50HSPU6voM/edit?usp=sharing"
+              >
+                <i
+                  // style={{ "font-size": "15px" }}
+                  style={{ color: "#ffd49c" }}
+                  className="bi bi-arrow-up-right-square-fill"
+                ></i>
+                <span
+                  style={{
+                    color: "white",
+                    margin: "10px",
+                    "font-size": "20px",
+                  }}
+                  id="view-cv-span"
+                >
+                  View CV
+                </span>
+              </a>
             </div>
           </div>
 
@@ -147,23 +160,27 @@ function Contact() {
             <img src={require("../../assets/contact/contact5.jpg")} />
           </div> */}
         </div>
-
       </div>
       <SideNav />
       <a onClick={() => navigate("/")}>
-        <i id="home" class="fas fa-home">
-        </i>
+        <i id="home" class="fas fa-home"></i>
       </a>
       <div id="icons-div">
         <div className="details-icons">
           <a target="_blank" href="https://twitter.com/radhikakkar">
-            <i id="footer-icon" className="bi bi-twitter"> </i>{" "}
+            <i id="footer-icon" className="bi bi-twitter">
+              {" "}
+            </i>{" "}
           </a>{" "}
           <a target="_blank" href="https://github.com/radhikakakkar">
-            <i id="footer-icon" className="bi bi-github"> </i>{" "}
+            <i id="footer-icon" className="bi bi-github">
+              {" "}
+            </i>{" "}
           </a>{" "}
-          <a target="_blank" href="https://www.linkedin.com/in/radhika-kakkar-bb6824193">
-            <i id="footer-icon" className="bi bi-linkedin"> </i>{" "}
+          <a target="_blank" href="https://www.linkedin.com/in/radhika-kakkar/">
+            <i id="footer-icon" className="bi bi-linkedin">
+              {" "}
+            </i>{" "}
           </a>{" "}
         </div>
       </div>
