@@ -1,5 +1,7 @@
 import React from "react";
-import emailjs from "emailjs-com";
+import { useRef } from "react";
+// import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import CompHead from "../comp-header/CompHead";
 import SideNav from "../side-nav/SideNav";
@@ -9,12 +11,14 @@ import { useNavigate } from "react-router-dom";
 
 function Contact() {
   const navigate = useNavigate();
-
+  const form = useRef();
   function sendEmail(e) {
     console.log("inside sendEmail");
-
+    // console.log(e.target);
     emailjs
-      .sendForm("service_7p7gdvy", "template_cdnfuun", e.target)
+      .sendForm("service_7p7gdvy", "template_cdnfuun", form.current, {
+        publicKey: "EqvbGQxn7TpFjCU9s",
+      })
       .then((res) => {
         console.log(res);
       })
@@ -54,11 +58,11 @@ function Contact() {
       <div className="contact-body">
         <div className="contact-form-div">
           <div id="notification"> </div>
-          <form id="contact-form" onSubmit={validate}>
+          <form ref={form} id="contact-form" onSubmit={validate}>
             <div>
               <input
                 id="name"
-                name="name"
+                name="from_name"
                 type="text"
                 className="form-control"
                 // placeholder="Name"
@@ -70,7 +74,7 @@ function Contact() {
             <div>
               <input
                 type="text"
-                name="email"
+                name="from_email"
                 id="email"
                 className="form-control"
                 // placeholder="Email"
