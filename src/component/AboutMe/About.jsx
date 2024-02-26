@@ -93,9 +93,10 @@ function About() {
               {/* </button> */}
             </div>
           </div>
-          <div style={{ "text-align": "center" }} id="my-apple-music-card">
-            <p>What I'm listening to </p>
-            <p>Loading... ⚙️</p>
+          <div id="my-apple-music-card">
+            {/* <p>What I'm listening to </p>
+            <p>Loading... ⚙️</p> */}
+            <img src="https://apple-music-cards.vercel.app/"></img>
           </div>
         </div>
         <div id="pov-span">

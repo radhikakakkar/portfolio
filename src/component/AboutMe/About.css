@@ -84,11 +84,11 @@
   font-size: 12px;
   line-height: 0;
 }
-#my-apple-music-card {
-  background-color: white;
+#my-apple-music-card > img {
+  /* background-color: white; */
   position: relative;
-  height: 100px;
-  width: 200px;
+  height: 10rem;
+  width: 20;
   margin: 0;
 }
 
@@ -204,22 +204,20 @@
 
 @media (max-width: 1000px) {
   .about-body {
-    /* height: 10em; */
     flex-direction: row;
   }
 
-  .about-cards-div {
-    /* margin-top: 0; */
+  /* .about-cards-div {
     flex-direction: column;
     width: 30%;
     height: 100%;
-  }
+  } */
 
   /* .about-cards-div>div {
         margin: 8px 0;
     } */
 
-  .about-text {
+  /* .about-text {
     font-size: 17px;
     padding: 16px;
     line-height: 1.6em;
@@ -227,15 +225,14 @@
     width: 50%;
     outline: 4px solid#ffd49c;
     height: 100%;
-  }
+  } */
 
-  .about-cards:hover {
-    /* outline: 4px solid#ffd49c; */
+  /* .about-cards:hover {
 
     margin: 10px 10px 10px 0;
     background-color: transparent;
     font-weight: 800 !important;
-  }
+  } */
 }
 
 @media (max-width: 700px) {
