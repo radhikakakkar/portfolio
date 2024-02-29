@@ -241,7 +241,7 @@
     height: 20em;
   }
 
-  .about-text {
+  /* .about-text {
     font-size: 15px;
     padding: 14px;
     line-height: 1.2em;
@@ -249,7 +249,7 @@
     width: 50%;
     outline: 2px solid#ffd49c;
     height: 100%;
-  }
+  } */
 
   .about-cards-div {
     /* margin-top: 0; */
@@ -287,47 +287,69 @@
 @media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .about-main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    height: 70%;
     align-items: center;
     width: 80%;
-    /* margin-top: 8%; */
-    /* margin-left: 5%; */
+    margin-top: 25%;
+    overflow-y: scroll;
+  }
+
+  .about-main > div {
+    margin: 0;
+  }
+  #about-text {
+    position: relative;
+    color: black;
+    font-weight: 800;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  #my-img {
+    height: 18em;
+    width: 15em;
+  }
+
+  #about-my-gadgets-music-container {
+    position: relative;
+    /* height: 200px; */
+    /* width: 550px; */
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #my-gadgets {
+    margin: auto;
+  }
+  #my-apple-music-card {
+    height: 20rem;
     margin: auto;
   }
 
-  .about-cards-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    /* margin-top: 0.6em; */
-    margin-top: 0.3em;
+  #my-apple-music-card > img {
+    height: 15rem;
+    margin-top: 2em;
   }
-
-  .about-cards {
-    outline: #ffd49c 4px solid;
-    background-color: white;
-    font-size: 15px;
-    margin: 10px 10px 10px 0;
-    height: 6em;
-    width: 6em;
-    margin-top: 5px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    transition: 0.2s ease-in-out;
+  #pov-span {
+    display: none;
+    top: 11rem;
+    left: 5rem;
   }
-
-  .about-cards:hover {
-    outline: none;
-    margin-top: -2px;
-    background-color: transparent;
-    font-weight: 800 !important;
+  #about-my-updates {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 16rem;
+    height: auto;
+    width: auto;
   }
-
   .about-body {
     display: flex;
     flex-direction: column;
