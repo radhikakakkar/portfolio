@@ -157,7 +157,7 @@ li > a.nav-link:hover {
 /* education-section */
 .education-section {
   margin: auto;
-  padding: 20px 0;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -230,7 +230,7 @@ ul.schools li::before {
 /* experience-section */
 .experience-section {
   margin: auto;
-  padding: 20px 0;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -339,6 +339,8 @@
 
   #my-apple-music-card > img {
     /* height: 15rem; */
+    height: 15rem;
+    width: 15em;
     margin-top: 2em;
   }
   #pov-span {
