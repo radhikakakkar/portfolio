@@ -157,7 +157,7 @@ li > a.nav-link:hover {
 /* education-section */
 .education-section {
   margin: auto;
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -230,10 +230,11 @@ ul.schools li::before {
 /* experience-section */
 .experience-section {
   margin: auto;
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: scroll;
 }
 
 .works {
@@ -477,20 +478,26 @@ li.interests-li {
     font-size: 17.5px;
     font-weight: 700;
   }
-
+  .school-li {
+    margin-bottom: 1rem;
+  }
   .work-header {
     font-size: 17.5px;
     font-weight: 700;
   }
-
+  .skills {
+    padding-left: 0;
+  }
   .skills-section {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
-  .skills {
-    padding-left: 0;
+  .skills-list {
+    height: 100%;
+  }
+  .skills-list-div-inner-list {
+    flex-direction: column;
   }
 
   #home {

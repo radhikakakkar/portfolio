@@ -96,13 +96,14 @@ function About() {
           <div id="my-apple-music-card">
             {/* <p>What I'm listening to </p>
             <p>Loading... ⚙️</p> */}
+            <div id="listening-span">{/* <span>My Jam</span> */}</div>
             <img src="https://apple-music-cards.vercel.app/"></img>
           </div>
         </div>
-        <div id="pov-span">
-          <span>POV</span>
-        </div>
         <div id="about-my-updates">
+          <div id="pov-span">
+            <span>POV</span>
+          </div>
           <Carousel views={images} />
         </div>
       </div>

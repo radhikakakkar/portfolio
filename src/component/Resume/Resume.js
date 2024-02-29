@@ -50,7 +50,7 @@ function Resume() {
                 <a
                   className=" nav-link"
                   id="icon-bar-links"
-                  href="#projects-resume"
+                  href="#skills"
                   data-toggle="tab"
                 >
                   <i className="bi bi-person-workspace"></i>
@@ -339,11 +339,11 @@ function Resume() {
                 </div>
               </div>
             </div>
-            <div id="projects-resume" className="tab-pane animated slideInDown">
+            {/* <div id="projects-resume" className="tab-pane animated slideInDown">
               <div className="projects-section">
                 <span id="projects-header">A detailed view of my projects</span>
-                <a onClick={() => navigate("/projects")}> Go to projects</a>
-                {/* <div className="projects-list">
+                <a onClick={() => navigate("/projects")}> Go to projects</a> */}
+            {/* <div className="projects-list">
                   <ul className="projects">
                     <li className="project-li">
                       <span className=""></span>
@@ -357,8 +357,8 @@ function Resume() {
                   </ul>
                   
                 </div> */}
-              </div>
-            </div>
+            {/* </div> */}
+            {/* </div> */}
             <div id="interests" className="tab-pane animated slideInDown">
               <div className="interests-section">
                 <div className="interests-list">
@@ -408,10 +408,7 @@ function Resume() {
               {" "}
             </i>{" "}
           </a>{" "}
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/radhika-kakkar/"
-          >
+          <a target="_blank" href="https://www.linkedin.com/in/radhika-kakkar/">
             <i id="footer-icon" className="bi bi-linkedin">
               {" "}
             </i>{" "}

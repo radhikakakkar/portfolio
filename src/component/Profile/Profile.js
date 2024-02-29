@@ -75,7 +75,9 @@ export default function Profile() {
           </div>
         </div>
       </div>
-
+      {/* <span style="color:white;" id="building-span">
+        Currently building .... please bear with me :)
+      </span> */}
       <div className="profile-right">
         <div className="intro-div">
           <div id="name-div">

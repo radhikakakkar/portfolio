@@ -120,6 +120,10 @@
   font-size: large;
   text-shadow: 2px 2px grey;
 }
+#listening-span {
+  display: none;
+}
+
 #about-my-updates {
   position: absolute;
   width: 333px;
@@ -289,7 +293,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 70%;
+    height: 69%;
     align-items: center;
     width: 80%;
     margin-top: 25%;
@@ -329,18 +333,19 @@
     margin: auto;
   }
   #my-apple-music-card {
-    height: 20rem;
+    height: 15rem;
     margin: auto;
   }
 
   #my-apple-music-card > img {
-    height: 15rem;
+    /* height: 15rem; */
     margin-top: 2em;
   }
   #pov-span {
-    display: none;
-    top: 11rem;
-    left: 5rem;
+    left: 2rem;
+  }
+  #listening-span {
+    display: block;
   }
   #about-my-updates {
     position: relative;
