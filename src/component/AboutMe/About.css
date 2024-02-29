@@ -112,7 +112,7 @@
 #pov-span {
   position: absolute;
   top: 2rem;
-  right: 32rem;
+  right: 17rem;
   z-index: 1;
   text-align: center;
   color: white;
@@ -333,16 +333,18 @@
     margin: auto;
   }
   #my-apple-music-card {
-    height: 15rem;
+    /*  height: 15rem; */
     margin: auto;
+    /* height: 15rem; */
+    /* width: 15em; */
+    margin-top: 2em;
   }
 
-  #my-apple-music-card > img {
-    /* height: 15rem; */
+  /* #my-apple-music-card > img {
     height: 15rem;
     width: 15em;
     margin-top: 2em;
-  }
+  } */
   #pov-span {
     left: 2rem;
   }
